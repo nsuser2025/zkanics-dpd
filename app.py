@@ -8,7 +8,7 @@ import os
 
 markdown_contents = {}
 note_paths = {
-    "mesh2lammps": "MESH2LAMMPS/mesh2lammps.md"
+    "mesh2lammps": "MESH2LAMMPS/mesh2lammps.md",
     "mdpd_refs": "MDPD/refs.md",
     }
 
