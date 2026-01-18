@@ -10,8 +10,8 @@ twist_ratio: 角度をずらすときの比率（def. 0.5）</br>
 vid(i,j) = j * n_theta + (i % n_theta) $\cdots$ i は円周, j は z-axis の vertices index. </br>
 1 層目（j = 0）では n_theta 点のノードが配置されるので, 2層目（j = 1）は n_theta + 1
 からインデックスが開始される.（i % n_theta）は i = n_theta のときだけゼロになる.
-これは dtheta = $2\pi$ / n_theta（i = 0〜n_theta - 1 のグリッドが円周上に配置）より
-i = n_theta が i = 0 と同じであることによる.</br>
+これは dtheta = $2\pi$ / n_theta（i = 0, n_theta - 1）より i = n_theta
+が i = 0 と同じであることによる.</br>
 </p>
 <p>
 twist = twist_ratio * dtheta $\cdots$
