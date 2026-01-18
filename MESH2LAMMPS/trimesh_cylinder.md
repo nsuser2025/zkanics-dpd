@@ -31,7 +31,6 @@ n_theta: 円周のグリッド数（def. 64, 偶数にする）</br>
 n_z: z-axis のグリッド数　(def. 40) </br>
 twist_ratio: 角度をずらすときの比率（def. 0.5）</br>
 </p>
-
 <p>
 vertices index: </br>
 vid(i,j) = j * n_theta + (i % n_theta) $\cdots$ i は円周, j は z-axis のインデックス. </br>
@@ -39,7 +38,10 @@ vid(i,j) = j * n_theta + (i % n_theta) $\cdots$ i は円周, j は z-axis のイ
 n_theta + 1 からインデックスが開始される. (i % n_theta) は i = n_theta のときだけゼロになる.
 これは dtheta = 2 * np.pi / n_theta（i = 0〜n_theta - 1 のグリッドが円周上に配置）より
 i = n_theta が i = 0 と同じであることによる.</br>
+</p>
+<p>
 twist = twist_ratio * dtheta　</br>
+dtheta は円周上の
 </p>
 
 <figure style="text-align: center;">
