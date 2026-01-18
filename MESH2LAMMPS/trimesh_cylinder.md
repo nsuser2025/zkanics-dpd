@@ -1,6 +1,7 @@
 <p>
 trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) : </br>
-radius: 円柱半径（def. 10.0）, height: 円柱の高さ（z-axis）（def. 20.0）</br>
+radius: 円柱半径（def. 10.0）
+height: 円柱の高さ（z-axis）（def. 20.0）</br>
 n_theta: 円周のグリッド数（def. 64, 偶数にする）</br>
 n_z: z-axis のグリッド数　(def. 40) </br>
 twist_ratio: 角度をずらすときの比率（def. 0.5）</br>
@@ -33,6 +34,6 @@ data ファイルから vtk ファイルへの変換 ... python data2vtk.py mesh
 
 <figure style="text-align: center;">
 <img src="https://raw.githubusercontent.com/nsuser2025/zkanics-notes-on-dpd/main/MESH2LAMMPS/trimesh_helical.png" 
-alt="trimesh_helical" width="300">
+alt="trimesh_helical" width="350">
 <figcaption style="text-align:center;">図1: ノードの決め方と三角面</figcaption>
 </figure>
