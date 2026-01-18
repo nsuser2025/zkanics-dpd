@@ -15,7 +15,7 @@ i = n_theta が i = 0 と同じであることによる.</br>
 </p>
 <p>
 twist = twist_ratio * dtheta $\cdots$
-dtheta は（i,j）と（i+1,j）の角度, twist は（i,j）と（i,j+1）の x-y 平面上の角度.</br>
+dtheta は（i,j）と（i+1,j）の角度, twist は（i,j）と（i,j+1）の x-y 平面上の角度.
 $\rightarrow$ 図 1（a）.
 </p>
 <p>
