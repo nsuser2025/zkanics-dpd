@@ -13,12 +13,12 @@ trimesh の is_watertight が Flase のときは次の状態が考えられる. 
 1. 穴があいている. </br>
 2. 一部の三角形が逆向きで内外を定義できない. </br>
 3. 面が他の面を貫通したり, 交差している. </br>
-これらの状態は非物理的なシミュレーション結果を誘発するので
-かならず watertight を確認する.
+これらの状態は非物理的なシミュレーション結果の原因になるので
+かならず is_watertight を確認する.
 </p>
 
 <figure style="text-align: center;">
 <img src="https://raw.githubusercontent.com/nsuser2025/zkanics-notes-on-dpd/main/MESH2LAMMPS/trimesh_helical.png" 
 alt="trimesh_helical" width="200">
-<figcaption style="text-align:center;">図1: Skinnerらによる水界面のSFGスペクトル</figcaption>
+<figcaption style="text-align:center;">図1: シリンダー表面の仮想粒子化</figcaption>
 </figure>
