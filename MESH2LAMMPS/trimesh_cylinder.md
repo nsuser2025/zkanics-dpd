@@ -7,7 +7,6 @@ n_z: z-axis のグリッド数　(def. 40) </br>
 twist_ratio: 角度をずらすときの比率（def. 0.5）</br>
 </p>
 <p>
-vertices index </br>
 vid(i,j) = j * n_theta + (i % n_theta) $\cdots$ i は円周, j は z-axis のインデックス. </br>
 1 層目（j = 0）で n_theta 点のノードが配置されているので, 2層目（j = 1）は
 n_theta + 1 からインデックスが開始される. (i % n_theta) は i = n_theta のときだけゼロになる.
@@ -15,7 +14,7 @@ n_theta + 1 からインデックスが開始される. (i % n_theta) は i = n_
 i = n_theta が i = 0 と同じであることによる.</br>
 </p>
 <p>
-twist = twist_ratio * dtheta　</br>
+twist = twist_ratio * dtheta $\cdots$
 dtheta は（i,j）と（i+1,j）の角度, twist は（i,j）と（i,j+1）の x-y 平面上の角度.</br>
 $\rightarrow$ 図 1（a）.
 </p>
