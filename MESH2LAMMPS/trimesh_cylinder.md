@@ -9,6 +9,7 @@
 </p>
 
 <figure style="text-align: center;">
-<img src="https://raw.githubusercontent.com/nsuser2025/sfg-notes/main/notes/skinner_SFG.jpg" alt="Skinner_SFG" width="200">
+<img src="https://raw.githubusercontent.com/nsuser2025/zkanics-notes-on-dpd/main/MESH2LAMMPS/trimesh_helical.png" 
+alt="trimesh_helical" width="200">
 <figcaption style="text-align:center;">図1: Skinnerらによる水界面のSFGスペクトル</figcaption>
 </figure>
