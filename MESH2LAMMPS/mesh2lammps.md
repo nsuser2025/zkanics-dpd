@@ -3,6 +3,7 @@
 conda install conda-forge::trimesh </br>
 conda install conda-forge::networkx </br>
 conda install scipy </br>
+conda install pandas </br>
 conda install -c conda-forge "pyglet<2"
 </p>
 
