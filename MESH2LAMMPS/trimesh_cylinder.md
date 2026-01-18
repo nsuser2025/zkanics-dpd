@@ -19,8 +19,8 @@ dtheta は（i,j）と（i+1,j）の角度, twist は（i,j）と（i,j+1）の 
 $\rightarrow$ 図 1（a）.
 </p>
 <p>
-三角面の設定: </br>
-face.append([(i,j),(i+1,j),(i,j+1)]) </br>
+三角面の設定 $\cdots$
+face.append([(i,j),(i+1,j),(i,j+1)]),
 face.append([(i+1,j),(i+1,j+1),(i,j+1)]) </br>
 図 1（b）の三角形のノードを反時計回りに指定している.
 </p>
