@@ -42,11 +42,13 @@ i = n_theta が i = 0 と同じであることによる.</br>
 <p>
 twist = twist_ratio * dtheta　</br>
 dtheta は（i,j）と（i+1,j）の角度, twist は（i,j）と（i,j+1）の x-y 平面上の角度.</br>
-$\rightarrow$ 図 1 の左図.
+$\rightarrow$ 図 1（a）.
 </p>
 <p>
 三角面の設定: </br>
-face.append()
+face.append([(i,j),(i+1,j),(i,j+1)]) </br>
+face.append([(i+1,j),(i+1,j+1),(i,j+1)]) </br>
+図 1（b）の三角形のノードを反時計回りに指定している.
 </p>
 
 <figure style="text-align: center;">
