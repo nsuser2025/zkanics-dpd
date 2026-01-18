@@ -1,5 +1,5 @@
 <p>
-trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) : </br>
+trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) 関数</br>
 radius: 円柱半径（def. 10.0）
 height: 円柱の高さ（z-axis）（def. 20.0）</br>
 n_theta: 円周のグリッド数（def. 64, 偶数にする）</br>
@@ -8,9 +8,9 @@ twist_ratio: 角度をずらすときの比率（def. 0.5）</br>
 </p>
 <p>
 vid(i,j) = j * n_theta + (i % n_theta) $\cdots$ i は円周, j は z-axis の vertices index. </br>
-1 層目（j = 0）で n_theta 点のノードが配置されているので, 2層目（j = 1）は
-n_theta + 1 からインデックスが開始される. (i % n_theta) は i = n_theta のときだけゼロになる.
-これは dtheta = 2 * np.pi / n_theta（i = 0〜n_theta - 1 のグリッドが円周上に配置）より
+1 層目（j = 0）は n_theta 点のノードが配置, 2層目（j = 1）は n_theta + 1
+からインデックスが開始される.（i % n_theta）は i = n_theta のときだけゼロになる.
+これは dtheta = $2\pi$ / n_theta（i = 0〜n_theta - 1 のグリッドが円周上に配置）より
 i = n_theta が i = 0 と同じであることによる.</br>
 </p>
 <p>
