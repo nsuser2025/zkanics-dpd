@@ -1,6 +1,5 @@
-#### trimesh を用いたキャップなしシリンダーの STL 作成
 <p>
-trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) : </br>
+$\cdot$ trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) : </br>
 radius: 円柱半径（def. 10.0）　</br>
 height: 円柱の高さ（z-axis）（def. 20.0）</br>
 n_theta: 円周のグリッド数（def. 64, 偶数にする）</br>
