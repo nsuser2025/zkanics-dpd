@@ -19,6 +19,8 @@ trimesh の is_watertight が Flase のときは次の状態が考えられる. 
 かならず is_watertight を確認する.
 </p>
 
+---
+
 #### trimesh を用いたキャップなしシリンダーの STL 作成
 
 <p>
@@ -28,6 +30,12 @@ height: 円柱の高さ（z-axis）（def. 20.0）</br>
 n_theta: 円周のグリッド数（def. 64, 偶数にする）</br>
 n_z: z-axis のグリッド数　(def. 40) </br>
 twist_ratio: ずらし角度（def. 0.5）</br>
+</p>
+
+<p>
+vid(i,j): vertices index の略で　i は円周上, j は z-axis 上のノードインデックス.
+dtheta = 2 * np.pi / n_theta（i = 0〜n_theta-1 のグリッドが円周上に配置）</br>
+i = n_theta は i = 0 と一致する.
 </p>
 
 <figure style="text-align: center;">
