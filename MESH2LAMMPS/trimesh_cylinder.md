@@ -1,6 +1,7 @@
 #### trimesh を用いた STL 作成
 
 <p>
+作成フロー: </br>
 1. 曲面定義 </br>
 2. ノード配置（vertices）</br>
 3. 三角形生成（faces）</br>
@@ -16,6 +17,17 @@ trimesh の is_watertight が Flase のときは次の状態が考えられる. 
 3. 面が他の面を貫通したり, 交差している. </br>
 これらの状態は非物理的なシミュレーション結果の原因になるので
 かならず is_watertight を確認する.
+</p>
+
+#### trimesh を用いたキャップなしシリンダーの STL 作成
+
+<p>
+trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) : </br>
+radius: 円柱半径（def. 10.0）　</br>
+height: 円柱の高さ（z-axis）（def. 20.0）</br>
+n_theta: 円周のグリッド数（def. 64, 偶数にする）</br>
+n_z: z-axis のグリッド数　(def. 40) </br>
+twist_ratio: ずらし角度（def. 0.5）</br>
 </p>
 
 <figure style="text-align: center;">
