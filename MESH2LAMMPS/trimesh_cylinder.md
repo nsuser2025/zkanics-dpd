@@ -28,7 +28,7 @@ $\rightarrow$ 図 1（b）の三角形のノードを反時計回りに指定し
 cylinder の stl 作成 $\cdots$ python mkcylinder.py </br>
 stl から仮想粒子作成 $\cdots$ python mesh2lammps.py cylinder.stl </br>
 data ファイルから vtk ファイルへの変換 $\cdots$ python data2vtk.py mesh.data </br>
-作成した vtk ファイルを paraview で可視化 $\rightarrow$ 図 1（c）</br>
+作成した vtk ファイルを paraview で可視化 $\rightarrow$ 図 1（c）
 </p>
 
 <figure style="text-align: center;">
