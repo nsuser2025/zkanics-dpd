@@ -53,7 +53,7 @@ face.append([(i+1,j),(i+1,j+1),(i,j+1)]) </br>
 cylinder の stl 作成 python mkcylinder.py </br>
 stl から仮想粒子作成 python mesh2lammps.py cylinder.stl </br>
 data ファイルから vtk ファイルへの変換 ... python data2vtk.py mesh.data </br>
-作成した vtk ファイルを paraview で可視化 ... 図 1（c）
+作成した vtk ファイルを paraview で可視化 $\rightarrow$ 図 1（c）
 </p>
 
 <figure style="text-align: center;">
