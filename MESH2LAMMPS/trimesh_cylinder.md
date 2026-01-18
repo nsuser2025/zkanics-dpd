@@ -22,7 +22,6 @@ trimesh の is_watertight が Flase のときは次の状態が考えられる. 
 ---
 
 #### trimesh を用いたキャップなしシリンダーの STL 作成
-
 <p>
 trimesh_cylinder (radius, height, n_theta, n_z, twist_ratio) : </br>
 radius: 円柱半径（def. 10.0）　</br>
@@ -32,7 +31,7 @@ n_z: z-axis のグリッド数　(def. 40) </br>
 twist_ratio: 角度をずらすときの比率（def. 0.5）</br>
 </p>
 <p>
-vertices index: </br>
+vertices index </br>
 vid(i,j) = j * n_theta + (i % n_theta) $\cdots$ i は円周, j は z-axis のインデックス. </br>
 1 層目（j = 0）で n_theta 点のノードが配置されているので, 2層目（j = 1）は
 n_theta + 1 からインデックスが開始される. (i % n_theta) は i = n_theta のときだけゼロになる.
@@ -49,6 +48,12 @@ $\rightarrow$ 図 1（a）.
 face.append([(i,j),(i+1,j),(i,j+1)]) </br>
 face.append([(i+1,j),(i+1,j+1),(i,j+1)]) </br>
 図 1（b）の三角形のノードを反時計回りに指定している.
+</p>
+<p>
+cylinder の stl 作成 ... python mkcylinder.py </br>
+stl から仮想粒子作成 ... python mesh2lammps.py cylinder.stl </br>
+data ファイルから vtk ファイルへの変換 ... python data2vtk,py mesh.data </br>
+作成した vtk ファイルを paraview で可視化 ... 図 1（c）
 </p>
 
 <figure style="text-align: center;">
