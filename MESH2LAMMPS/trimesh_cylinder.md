@@ -50,9 +50,9 @@ face.append([(i+1,j),(i+1,j+1),(i,j+1)]) </br>
 図 1（b）の三角形のノードを反時計回りに指定している.
 </p>
 <p>
-cylinder の stl 作成 ... python mkcylinder.py </br>
-stl から仮想粒子作成 ... python mesh2lammps.py cylinder.stl </br>
-data ファイルから vtk ファイルへの変換 ... python data2vtk,py mesh.data </br>
+cylinder の stl 作成 python mkcylinder.py </br>
+stl から仮想粒子作成 python mesh2lammps.py cylinder.stl </br>
+data ファイルから vtk ファイルへの変換 ... python data2vtk.py mesh.data </br>
 作成した vtk ファイルを paraview で可視化 ... 図 1（c）
 </p>
 
