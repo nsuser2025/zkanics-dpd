@@ -35,10 +35,10 @@ twist_ratio: ずらし角度（def. 0.5）</br>
 <p>
 vid(i,j): vertices index（i は円周, j は z-axis のインデックス）. </br>
 vid(i,j) = j * n_theta + (i % n_theta) </br>
-1 層目は j = 0　で n_theta 点のノードが配置されているので, 2層目（j = 1）のときは
+1 層目（j = 0）で n_theta 点のノードが配置されているので, 2層目（j = 1）は
 n_theta + 1 からインデックスが開始される. (i % n_theta) は i = n_theta のときだけ 0　になる.
 これは dtheta = 2 * np.pi / n_theta（i = 0〜n_theta - 1 のグリッドが円周上に配置）より
-i = n_theta は i = 0 と一致することによる.
+i = n_theta が i = 0 と同じであることによる.
 </p>
 
 <figure style="text-align: center;">
