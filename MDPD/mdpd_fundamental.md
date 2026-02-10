@@ -15,6 +15,13 @@ MDPD は保存力を粒子間距離だけでなく, その瞬間の局所粒子�
 それにより, MDPD における保存力は実質的に多体力となり, 一般に引力成分と斥力成分の両方を含む.
 EOS に高次項が導入されたことで, MDPD は液滴形成や濡れに関連する現象のシミュレーションが可能となる.  
 </p>
+<p><u>保存力</u></p>
+$$
+\begin{align}
+{\bf F}_{ij}^{\rm c} &= A_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
++ B_{ij} (\bar \rho_{i} + \bar \rho_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2}
+\end{align}
+$$
 
 ---
 
