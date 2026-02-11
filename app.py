@@ -11,6 +11,7 @@ note_paths = {
     "trimesh": "MESH2LAMMPS/trimesh.md",
     "trimesh_cylinder": "MESH2LAMMPS/trimesh_cylinder.md",
     "mesh2lammps": "MESH2LAMMPS/mesh2lammps.md",
+    "mdpd_fundamental": "MDPD/mdpd_fundamental.md",
     "mdpd_refs": "MDPD/refs.md",
     }
 
