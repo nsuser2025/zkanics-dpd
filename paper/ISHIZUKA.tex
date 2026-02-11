@@ -56,10 +56,6 @@
 \affiliation[ZKA]
 {Zkanics F.P.S., SIDE-6 Senriyama-West, Suita, Osaka, 565-0851, Japan}
 \email{ryo.ishizuka@gmail.com}
-\author{Tatsuhiko OHTO}
-\affiliation[NAG]
-{Graduate School of Engineering, Nagoya University, Furo-cho, Chikusa-ku, Nagoya, Aichi 464-8603, Japan}
-\email{ohto@nagoya-u.jp}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The document title should be given as usual
@@ -229,7 +225,15 @@ while those from PBE-D3 are shown on the vertical axis.
 %are evaluated by experiments \cite{Ueno2012}. 
 %%%%%
 %
-%\section{NUMERICAL DETAILS}
+
+\section{Many-body DPD simulation}
+
+\begin{eqnarray}
+{\bf F}_{ij}^{\rm C} &= A_{ij}\omega_{\rm C}(r_{ij}){\hat {\bf r}}_{ij}
++ B_{ij}({\bar\rho}_{i} + {\bar\rho}_{j) \omega_{\rm d}(r_{ij}) 
+\label{eq:MDPD_CONS}
+\end{eqnarray}
+
 
 
 
