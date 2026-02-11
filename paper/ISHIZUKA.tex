@@ -1,0 +1,264 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This is a (brief) model paper using the achemso class
+%% The document class accepts keyval options, which should include
+%% the target journal and optionally the macuscript tye
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[journal=jacsat,manuscript=article]{achemso}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional packages needed here.  Only include packages
+%% which are essential, to avoid problems later.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[version=3]{mhchem} % Formula subscripts using \ce{}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
+\usepackage{cleveref}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{enumitem}
+\makeatletter
+\setlength\acs@tocentry@width{8.25cm}
+\setlength\acs@tocentry@height{4.45cm}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% If issues arise when submitting your manuscript, you may want to
+%% un-comment the next line.  This provides information on the
+%% version of every file you have used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\listfiles
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Place any additional macros here.  Please use \newcommand* where
+%% possible, and avoid layout changing macros (which are not used
+%% when typesetting).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand*{\mycommand}[1]{\texttt{\emph{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Meta-data block
+%% ---------------
+%% Each author should be given as a separate \author command.
+%%
+%% Corresponding authors should have an e-mail given after the author
+%% name as an \email command.
+%%
+%% The affiliation of authors is given after the authors; each
+%% \affiliation command applies to all preceding authors not already
+%% assigned an affiliation.
+%%
+%% The affiliation takes an option argument for the short name.  This
+%% will typically be something like "University of Somewhere".
+%%
+%% The \altaffiliation macro should be used for new address, etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{Ryosuke ISHIZUKA}
+\affiliation[ZKA]
+{Zkanics F.P.S., SIDE-6 Senriyama-West, Suita, Osaka, 565-0851, Japan}
+\email{ryo.ishizuka@gmail.com}
+\author{Tatsuhiko OHTO}
+\affiliation[NAG]
+{Graduate School of Engineering, Nagoya University, Furo-cho, Chikusa-ku, Nagoya, Aichi 464-8603, Japan}
+\email{ohto@nagoya-u.jp}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The document title should be given as usual
+%% A short title can be given as a *suggestion* for running headers.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[\texttt{achemso} demonstration]
+{Li/Na Ions Desolvation in Solvate Ionic Liquids:
+Molecular Insights From Non-Polarizable and Machine-Learning Force Fields}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The manuscript does not need to include \maketitle, which is
+%% executed automatically.  The document should begin with an
+%% abstract, if appropriate.  If one is given and should not be, the
+%% contents will be gobbled.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+%Diffusion of lithium ions in Li-glyme solvate ionic liquids
+%and high-concentrate electrolyte were investigated through 
+%universal machine learning interatomic potential (MLIP).
+%%
+%Structural properties.
+%%
+\end{abstract}
+
+%TOC Graphic.
+%\begin{figure}
+%\begin{center}
+%\includegraphics{TOC}
+%\end{center}
+%\end{figure}
+%Implicit solvation model, Brownian dynamics, Salt effect, XRISM, GB/SA
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start the main part of the manuscript here.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\section{INTRODUCTION}
+Over the past decade, machine-learning force fields (MLFFs) have 
+emerged as a transformative approach in computational chemistry.
+In these force fields, interatomic interactions are represented by artificial 
+neural networks trained on structural data obtained 
+from \textit{ab initio} molecular dynamics (AIMD) simulations.
+MLFF-based simulations can therefore achieve AIMD-level 
+accuracy for many materials.
+This success, however, has prompted a reconsideration of 
+the validity of the traditionally employed 
+non-polarizable force fields.
+In particular, the simulation of ionic liquids (ILs) 
+is a prototypical case in which non-polarizable 
+force fields have been extensively employed.
+ILs are molten salts consisting of organic cations 
+and organic/inorganic anions.
+By varying the combinations of cations and anions,
+their electrochemical properties, such as 
+ionic conductivity, can be tuned.
+ILs have therefore attracted great attention as ``designer solvents''
+in electrochemistry and have also been a long-standing subject 
+in the community of molecular simulations.
+One of the widely used non-polarizable force fields
+for ILs is the OPLS-based model developed by Lopes and Padua.
+Simulations based on their force fields
+can reproduce the fundamental static properties
+of ILs with acceptable accuracy.
+However, the simulated diffusion of ions 
+is much slower than observed experimentally,
+which primarily results from the inaccurate modeling 
+of electrostatic interactions between ions.
+Because the surrounding molecules strongly affect 
+the electronic structure of ions, the ionic charge in ILs
+(often referred to as effective charge) cannot be 
+considered fixed and instead adopts non-integer values.
+To account for the fluctuation and transfer of the ionic charge,
+considerable effort has been devoted to more realistic modeling 
+of electrostatic interactions.
+The charge-scaled force field, in which all atomic partial 
+charges of ions are uniformly scaled by a non-integer factor, 
+has been widely employed as the simplest approach.
+This charge scaling effectively weakens the ion-ion interactions,
+thereby accelerating ion diffusion.
+However, since the scaling factor is empirically determined
+to reproduce the experimental properties of ILs,
+reliable experimental data are required.
+Furthermore, simulations using this force field provide 
+limited molecular-level insights due to the inherent lack
+of physical justification for the scaling factor.
+To overcome this limitation, Ishizuka and Matubayasi 
+developed the MD/DFT self-consistent scheme to determine 
+the effective charge within the quantum mechanical framework~\cite{Ishizuka2016, Ishizuka2017}.
+They successfully determined the effective charge
+via the population analysis of the electron density 
+of ILs without relying on any experimental data.
+In contrast to MLFFs, these methods are based on non-polarizable force fields, 
+so the instantaneous forces acting on each atom are not consistent
+with the Hellmann-Feynman forces for the corresponding atomic configurations.
+Nevertheless, it remains unclear why refinements of
+non-polarizable force fields are so successful 
+in reproducing both the static and dynamic properties of ILs.
+To clarify this, we perform a comparative study of non-polarizable
+and machine-learning force fields through simulations of 
+${\rm Li}^{+}$ and ${\rm Na}^{+}$ desolvation 
+in glyme-based solvate ILs. 
+
+The glyme-based ionic liquids are characterized by their unique 
+solvation structures, where a lithium ion is coordinated by a single glyme
+molecule to form a stable solvate complex, as represented in Figure~\ref{fig:glyme_ILs}.
+%%%%
+Recent experimental studies suggest that the several tri-glyme is.
+The binding strength between ions and 
+%%%%
+In the present work, therefore, our interest lies not in the effectiveness 
+and performance of this ionic liquid as an electrolyte, 
+but in its use as a benchmark for machine-learning and 
+non-polarizable force fields.
+%%%%
+%%%%
+
+\clearpage
+
+\begin{figure}
+\begin{center}
+\includegraphics{./glyme_ILs}
+\caption{ 
+Schematic illustrations of (a) a lithium ion solvated by triglyme,
+(b) the anions considered in this work, and (c) glyme-based solvate ionic liquids,
+exemplified by $[{\rm Li}({\rm G}_{3})][{\rm NO}_{3}]$.
+}
+\label{fig:glyme_ILs}
+\end{center}
+\end{figure}
+
+\clearpage
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=\linewidth]{./fcorr_vdwd3}
+\caption{ 
+Comparison of atomic forces calculated with PBE and PBE-D3 for 
+(a) $[{\rm Li}({\rm G3})][{\rm NO}_{3}]$,
+(b) $[{\rm Li}({\rm G3})][{\rm OTf}]$,
+(c) $[{\rm Na}({\rm G3})][{\rm NO}_{3}]$,
+and (d) $[{\rm Na}({\rm G3})][{\rm OTf}]$.
+Forces from PBE are shown on the horizontal axis, 
+while those from PBE-D3 are shown on the vertical axis.
+}
+\label{fig:fcorr_vdwd3}
+\end{center}
+\end{figure}
+
+%%%%
+%Ab initio MD (AIMD) has been performed for tetra glyme ionic liquids~\cite{Sun2018}
+%%%%
+%Machine-learning interatomic potentials (MLIPs).
+%Review of ML \cite{Noe2020, Martin-Barrios2024}.
+%Machine-learning force fields (MLFFs).
+%CHGnet developed by Zhong et al. \cite{CHGNET}.
+%M3Gnet \cite{Chen2022}
+%Graph neural network (GNN) based machine-learning force fields.
+%Molecular dynamics (MD) simulation has been a powerful tool for the study of
+%the structure, dynamics, and function of proteins in atomic detail.
+%In general, the result of the MD simulation is quite sensitive to 
+%the accuracy of the interatomic interactions.
+%The classical force field for ionic liquid 
+%%%%%
+%%%%%
+%$[{\rm Li}({\rm G3})][{\rm NO}_{3}]$ and $[{\rm Li}({\rm G3})][{\rm OTf}]$ 
+%are evaluated by experiments \cite{Ueno2012}. 
+%%%%%
+%
+%\section{NUMERICAL DETAILS}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The "Acknowledgement" section can be given in all manuscript
+%% classes.  Rather than use \section, an appropriate macro is
+%% provided that will always work.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\acknowledgement
+The author gratefully acknowledges the support 
+of the Zkanics F.P.S. \\ 
+(https://www.linkedin.com/in/zkanics-side6).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The same is true for Supporting Information, which should use the
+%% \suppinfo macro.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\suppinfo
+%
+%The entire \textsf{achemso} bundle is generated by running
+%\texttt{achemso.dtx} through \TeX. Running \LaTeX\ on the same file
+%will generate the general documentation for both the class and
+%package files.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The appropriate \bibliography command should be placed here.
+%% Notice that the class file automatically sets \bibliographystyle
+%% and also names the section correctly.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{reference}
+
+\end{document}
