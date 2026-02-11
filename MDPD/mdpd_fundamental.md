@@ -19,7 +19,8 @@ EOS に高次項が導入されたことで, MDPD は液滴形成や濡れに関
 $$
 \begin{align}
 {\bf F}_{ij}^{\rm c} &= A_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
-+ B_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2}
++ B_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2} \\
+{\bar \rho}_{i} &= \sum_{i \neq j} \omega_{\rho}(r_{ij}) \tag{3}
 \end{align}
 $$
 $$
