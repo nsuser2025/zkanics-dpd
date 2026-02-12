@@ -32,5 +32,3 @@ $$
 = 30 \biggl( \frac{1}{3} - \frac{1}{2} + \frac{1}{5} \biggr) = 1 \tag{6}
 \end{align}
 $$
-
----
