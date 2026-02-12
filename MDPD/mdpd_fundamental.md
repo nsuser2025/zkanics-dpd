@@ -14,7 +14,6 @@ MDPD では保存力を粒子間距離だけでなく, その瞬間の局所粒�
 EOS に高次項が導入されたことで, MDPD は液滴形成や濡れに関連する現象のシミュレーションが可能となる. 
 MDPD の保存力は次式で表される（ただし, 散逸力と揺動力は通常の DPD simulation と同じである）:
 </p>
-<p><u>保存力</u></p>
 $$
 \begin{align}
 {\bf F}_{ij}^{\rm C} &= a_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
@@ -29,7 +28,8 @@ $$
 \omega_{\rm d}(r_{ij}) &= \biggl(1-\frac{r_{ij}}{r_{\rm d}} \biggr) 
 \hspace{0.4cm}\text{for $r_{ij} \le r_{\rm d}$} \tag{5} \\ \\
 \omega_{\rho}(r_{ij}) &= \frac{15}{2\pi r_{\rm d}^{3}} \biggl( 
-1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \text{for $r_{ij} \le r_{\rm d}$} \tag{6} \\ \\
+1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} 
+\hspace{0.4cm}\text{for $r_{ij} \le r_{\rm d}$} \tag{6} \\ \\
 \int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r) dr 
 &= \frac{30}{r_{\rm d}^{3}}\biggl( \frac{r_{\rm d}^{3}}{3} 
 - \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{5}}{5r_{\rm d}^{2}} \biggr)
