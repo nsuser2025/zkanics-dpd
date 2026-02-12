@@ -22,7 +22,8 @@ $$
 + B_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2} \\ \\
 {\bar \rho}_{i} &= \sum_{i \neq j} \omega_{\rho}(r_{ij}) \tag{3} \\ \\
 \omega_{\rho}(r_{ij}) &= \frac{15}{2\pi r_{\rm d}^{3}} \biggl( 
-1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \tag{4}
+1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \text{aho}\tag{4} \\ \\
+\int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r_{ij}) dr = 1 \tag{5}
 \end{align}
 $$
 <p><u>散逸力</u></p>
