@@ -1,10 +1,27 @@
 #### MDPD
+</p>
+<p><u>保存力</u></p>
+$$
+\begin{align}
+{\bf F}_{ij}^{\rm c} &= A_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
++ B_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{1} \\ \\
+{\bar \rho}_{i} &= \sum_{i \neq j} \omega_{\rho}(r_{ij}) \tag{2} \\ \\
+\omega_{\rm c}(r_{ij}) &= \biggl( 1 - \frac{r_{ij}}{r_{\rm c}} \biggr) \text{for $r_{ij} \le r_{\rm c}$} \tag{3} \\ \\
+\omega_{\rm d}(r_{ij}) &= \biggl( 1 - \frac{r_{ij}}{r_{\rm d}} \biggr) \text{for $r_{ij} \le r_{\rm d}$} \tag{4} \\ \\
+\omega_{\rho}(r_{ij}) &= \frac{15}{2\pi r_{\rm d}^{3}} \biggl( 
+1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \text{for $r_{ij} \le r_{\rm d}$} \tag{5} \\ \\
+\int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r) dr 
+&= \frac{30}{r_{\rm d}^{3}}\biggl( \frac{r_{\rm d}^{3}}{3} 
+- \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{5}}{5r_{\rm d}^{2}} \biggr)
+= 30 \biggl( \frac{1}{3} - \frac{1}{2} + \frac{1}{5} \biggr) = 1 \tag{6}
+\end{align}
+$$
 <p>
 単一成分の DPD 流体に対しては, 系の状態方程式（EOS）は $\rho$ の二次関数で近似される. 
 </p>
 $$
 \begin{align}
-p &= \rho k_{\rm B}T + \alpha a_{ij}\rho^{2} \tag{1}
+p &= \rho k_{\rm B}T + \alpha a_{ij}\rho^{2} \tag{7}
 \end{align}
 $$
 <p>
@@ -14,24 +31,6 @@ MDPD は保存力の表現を修正することで気液共存をモデル化す
 MDPD は保存力を粒子間距離だけでなく, その瞬間の局所粒子密度にも依存させることで EOS に高次項を導入している.
 それにより, MDPD における保存力は実質的に多体力となり, 一般に引力成分と斥力成分の両方を含む.
 EOS に高次項が導入されたことで, MDPD は液滴形成や濡れに関連する現象のシミュレーションが可能となる.  
-</p>
-<p><u>保存力</u></p>
-$$
-\begin{align}
-{\bf F}_{ij}^{\rm c} &= A_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
-+ B_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2} \\ \\
-{\bar \rho}_{i} &= \sum_{i \neq j} \omega_{\rho}(r_{ij}) \tag{3} \\ \\
-\omega_{\rm c}(r_{ij}) &= \biggl( 1 - \frac{r_{ij}}{r_{\rm c}} \biggr) \tag{4} \\ \\
-\omega_{\rm d}(r_{ij}) &= \biggl( 1 - \frac{r_{ij}}{r_{\rm d}} \biggr) \tag{5} \\ \\
-\omega_{\rho}(r_{ij}) &= \frac{15}{2\pi r_{\rm d}^{3}} \biggl( 
-1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \text{for $r_{ij} \le r_{\rm d}$} \tag{4} \\ \\
-\int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r) dr 
-&= \frac{30}{r_{\rm d}^{3}}\biggl( \frac{r_{\rm d}^{3}}{3} 
-- \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{5}}{5r_{\rm d}^{2}} \biggr)
-= 30 \biggl( \frac{1}{3} - \frac{1}{2} + \frac{1}{5} \biggr) = 1 \tag{5}
-\end{align}
-$$
-<p><u>散逸力</u></p>
 
 ---
 
