@@ -23,7 +23,7 @@ $$
 {\bar \rho}_{i} &= \sum_{i \neq j} \omega_{\rho}(r_{ij}) \tag{3} \\ \\
 \omega_{\rho}(r_{ij}) &= \frac{15}{2\pi r_{\rm d}^{3}} \biggl( 
 1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \text{for $r_{ij} \le r_{\rm d}$}\tag{4} \\ \\
-\int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r_{ij}) dr 
+\int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r) dr 
 &= \frac{30}{r_{\rm d}^{3}}\biggl( \frac{r_{\rm d}^{3}}{3} 
 - \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{5}}{5r_{\rm d}^{2}} \biggr)
 = 30 \biggl( \frac{1}{3} - \frac{1}{2} + \frac{1}{5} \biggr) = 1
