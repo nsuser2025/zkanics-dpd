@@ -25,7 +25,7 @@ $$
 1 - \frac{r_{ij}}{r_{\rm d}} \biggr)^{2} \text{for $r_{ij} \le r_{\rm d}$}\tag{4} \\ \\
 \int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r_{ij}) dr 
 &= \frac{30}{r_{\rm d}^{3}}\biggl( \frac{r_{\rm d}^{3}}{3} 
-- \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{r_{\rm d}^{5}}}{5r_{\rm d}^{2}} \biggr)
+- \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{5}}{5r_{\rm d}^{2}} \biggr)
 \end{align}
 $$
 <p><u>散逸力</u></p>
