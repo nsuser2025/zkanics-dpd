@@ -26,6 +26,7 @@ $$
 \int_{0}^{\infty} 4\pi r^{2} \omega_{\rho}(r_{ij}) dr 
 &= \frac{30}{r_{\rm d}^{3}}\biggl( \frac{r_{\rm d}^{3}}{3} 
 - \frac{r_{\rm d}^{4}}{2r_{\rm d}} + \frac{r_{\rm d}^{5}}{5r_{\rm d}^{2}} \biggr)
+= 30 \biggl( \frac{1}{3} - \frac{1}{2} + \frac{1}{5} \biggr) = 1
 \end{align}
 $$
 <p><u>散逸力</u></p>
