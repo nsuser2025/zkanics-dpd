@@ -10,8 +10,8 @@ MDPD の保存力は次式で表される（ただし, 散逸力と揺動力は�
 </p>
 $$
 \begin{align}
-{\bf F}_{ij}^{\rm C} &= a_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
-+ b_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2} \\ \\
+{\bf F}_{ij}^{\rm C} &= A_{ij} \omega_{\rm c}(r_{ij}) {\bf e}_{ij} 
++ B_{ij} ({\bar \rho}_{i} + {\bar \rho}_{j}) \omega_{\rm d}(r_{ij}) {\bf e}_{ij} \tag{2} \\ \\
 {\bf F}_{ij}^{\rm D} &= -\gamma \omega_{\rm c}^{2}(r_{ij})
 ({\hat {\bf r}}\cdot{\bf v}_{ij}) {\hat{\bf r}_{ij}} \tag{3} \\ \\
 {\bf F}_{ij}^{\rm R} &= \sqrt{2\gamma k_{\rm B}T} \theta (\Delta t)^{1/2} 
