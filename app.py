@@ -9,6 +9,7 @@ import os
 markdown_contents = {}
 note_paths = {
     "mdpd_fundamental": "MDPD/mdpd_fundamental.md",
+    "mdpd_refs": "MDPD/refs.md",
 }
 
 for key, path in note_paths.items():
