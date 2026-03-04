@@ -1,4 +1,3 @@
-#### インストール
 <p>
 conda install conda-forge::trimesh </br>
 conda install conda-forge::networkx </br>
