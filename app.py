@@ -10,7 +10,7 @@ markdown_contents = {}
 note_paths = {
     "mdpd_fundamental": "MDPD/mdpd_fundamental.md",
     "other_dpds": "MDPD/other_dpds.md",
-    "mesh2lammps": "MESH2LAMMPS/trimesh.md",
+    "trimesh": "MESH2LAMMPS/trimesh.md",
     "mesh2lammps": "MESH2LAMMPS/mesh2lammps.md",
     "mdpd_refs": "MDPD/refs.md",
 }
