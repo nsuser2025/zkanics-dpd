@@ -17,23 +17,18 @@ st.markdown("""
 
 markdown_contents = {}
 note_paths = {
-     "chapter001": "notes/chapter001.md",
-     "chapter002": "notes/chapter002.md",
-     "chapter003": "notes/chapter003.md",
-     "topics004": "notes/topics004.md",
-     "topics005": "notes/topics005.md",
-     "sfgmd": "notes/sfgmd.md",
-     "non_condon_effect": "notes/non_condon_effect.md",
-     "rotation_matrix_01": "notes/rotation_matrix_01.md", 
-     "rotation_matrix_02": "notes/rotation_matrix_02.md",
-     "window": "notes/window.md",
-     "artifact_in_3200": "notes/artifact_in_3200.md",
-     "nma01": "notes/nma01.md",
-     "nma02": "notes/nma02.md",
-     "nma03": "notes/nma03.md",
-     "nma04": "notes/nma04.md",
-     "nma05": "notes/nma05.md",
-     "nma06": "notes/nma06.md",
+     "DEM01": "DEM/fluidization.md",
+     "DEM02": "DEM/geldart.md",
+     "DEM03": "DEM/install.md",
+     "DEM04": "DEM/parallel.md",
+     "DEM05": "DEM/pour_drum.md",
+     "DEM06": "DEM/stl_format.md",
+     "MDPD01": "MDPD/mdpd_fundamental.md",
+     "MDPD02": "MDPD/other_dpds.md", 
+     "MDPD03": "MDPD/refs.md",
+     "MESH2LAMMPS01": "MESH2LAMMPS/mesh2lammps.md",
+     "MESH2LAMMPS02": "MESH2LAMMPS/trimesh.md",
+     "MESH2LAMMPS03": "MESH2LAMMPS/trimesh_cylinder.md",
 }
 
 for key, path in note_paths.items():
