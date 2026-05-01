@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>Notes on DPD Simulations</title>
+<title>Zkanics Notes on Physics</title>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
@@ -29,23 +29,33 @@ window.MathJax = {
         margin-top: 20px; 
         background-color: #ffffff;
         min-height: 200px;
-        overflow: hidden;
     }
 </style>
 </head>
 <body>
 
-<h1>Notes on DPD Simulations</h1>
+<h1>Zkanics Notes on Physics</h1>
 
 <label for="chapter-select">topics:</label>
 <select id="chapter-select" onchange="loadMarkdown(this.value)">
     <option value="" disabled selected>--- 選択してください ---</option>
-    <option value="mdpd_fundamental">Many-body DPD (MDPD)</option>
-    <option value="other_dpds">CAE 志向の DPD アルゴリズム</option>
-    <option value="trimesh_cylinder">仮想粒子からなる円柱壁の作成</option>
-    <option value="trimesh">trimesh を用いた STL ファイル作成</option>
-    <option value="mesh2lammps">mesh2lammps のインストール</option>
-    <option value="mdpd_refs">DPD 参考文献</option>
+    <option value="chapter001">SFG分光法とは？</option>
+    <option value="chapter002">赤外光と可視光を使う理由</option>
+    <option value="chapter003">界面選択性の理論的背景</option>
+    <option value="topics004">分極ベクトルと分極電荷密度</option>
+    <option value="topics005">誘電体のGaussの法則</option>
+    <option value="sfgmd">MDを用いたSFGスペクトル計算</option>
+    <option value="non_condon_effect">Non-Condon effect</option>
+    <option value="window">窓関数</option>
+    <option value="rotation_matrix_01">回転行列</option>
+    <option value="rotation_matrix_02">分極率の座標系変換</option>
+    <option value="artifact_in_3200">水界面SFGスペクトルの$3200 {\rm cm}^{-1}$ ピーク問題</option>
+    <option value="nma01">基準振動解析 調和振動子近似</option>
+    <option value="nma02">基準振動解析 基準座標</option>
+    <option value="nma03">基準振動解析 ハミルトニアン</option>
+    <option value="nma04">基準振動解析 モーメント</option>
+    <option value="nma05">基準振動解析 スペクトル密度</option>
+    <option value="nma06">基準振動解析 原子揺らぎとB因子</option>
 </select>
 
 <div id="note-container">
