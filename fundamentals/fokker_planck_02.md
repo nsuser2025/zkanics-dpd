@@ -17,11 +17,11 @@ $$
 ({\bf B}_{i,j'} \otimes {\bf B}_{i,j'})
 :: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{i}} \biggr] dt
 + \frac{1}{2} \sum_{i,j} \biggl[ ({\bf B}_{i,j} \otimes {\bf B}_{j,i})
-:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \biggr] dt \tag{5}
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \biggr] dt \tag{6}
 \end{align}
 $$
 <p>
-式 5 に対応する Fokker-Planck 方程式の項はそれぞれ次式で表される. 
+式 6 に対応する Fokker-Planck 方程式の項はそれぞれ次式で表される. 
 ただし, $i = j$ 項は DPD はゼロになることを考慮した.
 </p>
 $$
@@ -30,13 +30,13 @@ $$
 \cdot \biggl[({\bf B}_{i,j'} \otimes {\bf B}_{i,j'}) \frac{\partial}{\partial {\bf p}_{i}} \rho({\bf r},{\bf p},t)\biggr] \\
 &= \frac{1}{2} \sum_{i} \sum_{j' \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij'}) \frac{\partial}{\partial {\bf p}_{i}}
 \cdot \biggl[({\bf e}_{ij'} \otimes {\bf e}_{ij'}) 
-\frac{\partial}{\partial {\bf p}_{i}} \rho({\bf r},{\bf p},t) \biggr] \tag{6} \\
+\frac{\partial}{\partial {\bf p}_{i}} \rho({\bf r},{\bf p},t) \biggr] \tag{7} \\
 &\frac{1}{2} \sum_{ij} \frac{\partial}{\partial {\bf p}_{i}} \cdot
 \biggl[ ({\bf B}_{i,j} \otimes {\bf B}_{j,i}) \frac{\partial}{\partial {\bf p}_{j}} \rho({\bf r},{\bf p},t) \biggr] \\
 &= \frac{1}{2} \sum_{ij} \sigma^{2}\omega^{2}_{\rm R}(r_{ij}) \frac{\partial}{\partial {\bf p}_{i}}
 \cdot \biggl[({\bf e}_{ij}\otimes{\bf e}_{ji}) \frac{\partial}{\partial {\bf p}_{j}} \rho({\bf r},{\bf p},t) \\
 &= -\frac{1}{2} \sum_{i}\sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij}) \frac{\partial}{\partial {\bf p}_{i}}
-\cdot \biggl[ ({\bf e}_{ij}\otimes{\bf e}_{ij}) \frac{\partial}{\partial {\bf p}_{j}} \rho({\bf r},{\bf p},t)\biggr] \tag{7}
+\cdot \biggl[ ({\bf e}_{ij}\otimes{\bf e}_{ij}) \frac{\partial}{\partial {\bf p}_{j}} \rho({\bf r},{\bf p},t)\biggr] \tag{8}
 \end{align}
 $$
 <p>
@@ -48,7 +48,7 @@ $$
 \frac{\partial}{\partial {\bf p}_{i}} \cdot
 \biggl[ ({\bf e}_{ij} \otimes {\bf e}_{ij}) 
 \biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
-\rho({\bf r},{\bf p},t) \biggr] \tag{8}
+\rho({\bf r},{\bf p},t) \biggr] \tag{9}
 \end{align}
 $$
 <p>
@@ -82,6 +82,6 @@ $$
 {\bf e}_{ij} \cdot \biggl\{ \frac{\partial}{\partial {\bf p}_{i}}
 \biggl[{\bf e}_{ij} \cdot
 \biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
-\rho({\bf r},{\bf p},t) \biggr] \biggr\} \tag{9} 
+\rho({\bf r},{\bf p},t) \biggr] \biggr\} \tag{10} 
 \end{align}
 $$
