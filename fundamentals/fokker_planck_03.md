@@ -10,8 +10,8 @@ L_{\rm C}\rho({\bf r},{\bf p},t)
 \tag{11} \\
 L_{\rm D}\rho({\bf r},{\bf p},t) 
 &= \sum_{i}\sum_{j \neq i} \gamma \omega_{\rm D}(r_{ij}) {\bf e}_{ij} \cdot \frac{\partial}{\partial {\bf p}_{i}}
- \{({\bf e}_{ij}\cdot {\bf v}_{ij})\}
- +\frac{1}{2} \sum_{i} \sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij})
+ \{({\bf e}_{ij}\cdot {\bf v}_{ij})\} \\
+&+\frac{1}{2} \sum_{i} \sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij})
 {\bf e}_{ij} \cdot \biggl\{ \frac{\partial}{\partial {\bf p}_{i}}
 \biggl[{\bf e}_{ij} \cdot
 \biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
