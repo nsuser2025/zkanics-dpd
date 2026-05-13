@@ -50,6 +50,11 @@ $$
 <p>
 ${\bf D}_{\rm pp} \equiv \sum_{j} {\bf B}^{\rm T}_{{\rm p}, j}{\bf B}_{{\rm p}, j}$ で,
 ${\bf B}_{{\rm p}, j} \equiv ({\bf B}_{{\rm p1}, j}, {\bf B}_{{\rm p2}, j}, \cdots, {\bf B}_{{\rm pN}, j})$
-とすると, ${\bf B}_{\rm pi,j} = \sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ である.
+とすると, ベクトル ${\bf B}_{\rm pi,j}$ は $\sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ として定義される.
 </p>
+$$
+\begin{align}
+\frac{\partial^{2} {\bf D}_{{\rm pp}, ij}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+\end{align}
+$$
 
