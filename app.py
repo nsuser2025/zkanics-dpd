@@ -23,6 +23,7 @@ note_paths = {
      "DEM04": "DEM/parallel.md",
      "DEM05": "DEM/pour_drum.md",
      "DEM06": "DEM/stl_format.md",
+     "FP01": "fundamentals/fokker_planck.md",
      "MDPD01": "MDPD/mdpd_fundamental.md",
      "MDPD02": "MDPD/other_dpds.md", 
      "MDPD03": "MDPD/refs.md",
