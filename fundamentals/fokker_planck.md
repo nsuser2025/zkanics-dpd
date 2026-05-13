@@ -43,12 +43,12 @@ $$
 \end{pmatrix}
 = \begin{pmatrix}
 {\bf 0} & {\bf 0}  \\
-{\bf 0} & {\bf D}_{\rm pp}
+{\bf 0} & {\bf D}'
 \end{pmatrix}
 \end{align}
 $$
 <p>
-${\bf D}_{\rm pp} \equiv \sum_{j} {\bf B}^{\rm T}_{{\rm p}, j}{\bf B}_{{\rm p}, j}$ で,
+${\bf D}' \equiv \sum_{j} {\bf B}^{\rm T}_{j}{\bf B}_{j}$ で,
 ${\bf B}_{{\rm p}, j} \equiv ({\bf B}_{{\rm p1}, j}, {\bf B}_{{\rm p2}, j}, \cdots, {\bf B}_{{\rm pN}, j})$
 とすると, ベクトル ${\bf B}_{\rm pi,j}$ は $\sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ として定義される.
 </p>
