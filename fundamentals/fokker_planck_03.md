@@ -20,17 +20,18 @@ L_{\rm D}\rho({\bf r},{\bf p},t)
 \end{align}
 $$
 <p>
-平衡状態では $L_{\rm C}\rho_{\rm eq} = 0$, $L_{\rm D}\rho_{\rm eq} = 0$ が満たされている.
+定常平衡状態では $L_{\rm C}\rho_{\rm eq} = 0$, $L_{\rm D}\rho_{\rm eq} = 0$ である.
 ここで, $\partial \rho_{\rm eq}/\partial {\bf p}_{i} = -\beta {\bf v}_{i} \rho_{\rm eq}$
-より, 次式が成り立つとき $L_{\rm D}\rho_{\rm eq} = 0$ になる.
+より, $L_{\rm D}\rho_{\rm eq} = 0$ であるためには次式が成り立たなくてはならない.
 </p>
 $$
 \begin{align}
-\gamma \omega_{\rm D}(r_{ij})({bf e}_{ij}\cdot {\bf v}_{ij})
+&\gamma \omega_{\rm D}(r_{ij})({\bf e}_{ij}\cdot {\bf v}_{ij})
 -\beta \frac{\sigma^{2}}{2} \omega^{2}_{\rm R}(r_{ij})
-({\bf e}_{ij} \cdot {\bf v}_{ij}) \rho_{\rm eq} = 0
+({\bf e}_{ij} \cdot {\bf v}_{ij}) \rho_{\rm eq} = 0 \\
+&2 \gamma k_{\rm B}T \omega_{\rm D}(r_{ij}) = \sigma^{2} \omega_{\rm R}(r_{ij}) \tag{13}  
 \end{align}
 $$
 <p>
- 
+DPD では $\sigma = \sqrt(2\gamma k_{\rm B}T)$ で 式 13 の関係式を用いて温度制御を行う. 
 </p>
