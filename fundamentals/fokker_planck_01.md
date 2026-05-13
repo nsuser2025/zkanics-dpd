@@ -48,3 +48,13 @@ $$
  \{({\bf e}_{ij}\cdot {\bf v}_{ij})\} \tag{6}
 \end{align}
 $$
+<p>
+ここで $[\cdots]$ はスカラーで, $\partial {\bf e}_{ij}/\partial {\bf p}_{i} = 0$
+であることから, 次式が成り立つことを考慮した.
+</p>
+$$
+\begin{align}
+\frac{\partial}{\partial {\bf p}_{i}} \cdot ({\bf {e}}_{ij}[\cdots])
+&= {\bf {e}}_{ij} \cdot \frac{\partial}{\partial {\bf p}_{i}} ([\cdots])
+\end{align}
+$$
