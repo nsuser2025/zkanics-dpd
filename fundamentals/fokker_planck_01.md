@@ -49,7 +49,7 @@ $$
 \end{align}
 $$
 <p>
-ここで $[\cdots]$ はスカラーとしたとき, $\partial {\bf e}_{ij}/\partial {\bf p}_{i} = 0$
+ここで $[\cdots]$ をスカラーとしたとき, $\partial {\bf e}_{ij}/\partial {\bf p}_{i} = 0$
 であることから, 次式が成り立つことを考慮した.
 </p>
 $$
