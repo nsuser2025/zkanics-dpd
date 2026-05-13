@@ -21,3 +21,14 @@ L_{\rm D}\rho({\bf r},{\bf p},t)
 \biggr] \rho({\bf r},{\bf v},t)
 \end{align}
 $$
+
+<p>
+Ito積分
+</p>
+$$
+\begin{align}
+df &= \sum_{i}\frac{\partial f}{\partial x_{\alpha}} A_{\alpha}({\bf x},t)dt
++ \sum_{\alpha\beta} \frac{\partial f}{\partial x_{\beta}} B_{\beta\alpha} dW_{\alpha}
++ \frac{1}{2} \sum_{\alpha\beta} D_{\alpha\beta} \frac{\partial^{2}f}{\partial x_{\alpha}\partial x_{\beta}} dt
+\end{align}
+$$
