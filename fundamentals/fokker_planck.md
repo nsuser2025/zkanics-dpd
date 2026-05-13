@@ -35,9 +35,9 @@ df &= \sum_{i} \frac{df}{d{\bf r}_{i}} \frac{{\bf p}_{i}}{m_{i}} dt
 \end{align}
 $$
 <p>
-ここで伊藤公式のルール
+ここで $dW_{ij}=dW_{ji}$ を満たす独立なウィーナー過程を仮定すると，
 $dW_{ij'}dW_{jj''} = (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt$
-より, 式 4 の第二項は次式で表される.
+より, 式 4 の第二項は次式で表される.(Ref. Espanol1995 Eq. 5)
 </p>
 $$
 \begin{align}
