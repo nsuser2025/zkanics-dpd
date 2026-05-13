@@ -75,7 +75,7 @@ $$
 &= \frac{1}{2} \sum_{ij} \sigma^{2}\omega^{2}_{\rm R}(r_{ij}) \frac{\partial}{\partial {\bf p}_{i}}
 \cdot \biggl[({\bf e}_{ij}\otimes{\bf e}_{ji}) \frac{\partial}{\partial {\bf p}_{j}} \rho({\bf r},{\bf p},t) \\
 &= -\frac{1}{2} \sum_{i}\sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij}) \frac{\partial}{\partial {\bf p}_{i}}
-\cdot \biggl[ ({\bf e}_{ij}\otimes{\bf e}_{ij}) \frac{\partial}{\partial {\bf p}_{i}} \rho({\bf r},{\bf p},t)\biggr] \tag{7}
+\cdot \biggl[ ({\bf e}_{ij}\otimes{\bf e}_{ij}) \frac{\partial}{\partial {\bf p}_{j}} \rho({\bf r},{\bf p},t)\biggr] \tag{7}
 \end{align}
 $$
 <p>
@@ -84,8 +84,9 @@ $$
 $$
 \begin{align}
 \frac{1}{2} \sum_{i} \sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij})
-{\bf e}_{ij}^{\rm T}{\bf e}_{ij} \frac{\partial}{\partial {\bf p}_{i}}
+\frac{\partial}{\partial {\bf p}_{i}} \cdot
+\biggl[ ({\bf e}_{ij} \otimes {\bf e}_{ij}) 
 \biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
-\rho({\bf r},{\bf p},t) \tag{8}
+\rho({\bf r},{\bf p},t) \biggr] \tag{8}
 \end{align}
 $$
