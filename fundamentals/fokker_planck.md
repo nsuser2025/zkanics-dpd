@@ -32,3 +32,14 @@ df &= \sum_{i}\frac{\partial f}{\partial x_{\alpha}} A_{\alpha}({\bf x},t)dt
 + \frac{1}{2} \sum_{\alpha\beta} D_{\alpha\beta} \frac{\partial^{2}f}{\partial x_{\alpha}\partial x_{\beta}} dt
 \end{align}
 $$
+<p>
+ここで ${\bf D}$ は
+</p>
+$$
+\begin{align}
+{\bf D} &= \begin{pmatrix}
+{\bf D}_{rr} & {\bf D}_{rp}  \\
+{\bf D}_{pr} & {\bf D}_{pp}
+\end{pmatrix} 
+\end{align}
+$$
