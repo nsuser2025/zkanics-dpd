@@ -15,7 +15,7 @@ $$
 L_{\rm D}\rho({\bf r},{\bf p},t)
 &= \sum_{i}\sum_{j \neq i}
 {\bf e}_{ij} \frac{\partial}{\partial {\bf p}_{i}} \biggl[
-\gamma \omega_{\rm D}(r_{ij}) ({\bf e}_{ij}\cdot {\bf v}_{ij})
+\gamma \omega_{\rm D}(r_{ij}) ({\bf e}_{ij}\cdot {\bf v}_{ij}) \\
 + \frac{\sigma^{2}}{2} \omega^{2}_{\rm R}(r_{ij}) {\bf e}_{ij}
 \biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
 \biggr] \rho({\bf r},{\bf v},t)
