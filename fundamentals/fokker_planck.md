@@ -3,6 +3,6 @@
 </p>
 $$
 \begin{align}
-{\bf r}_{i} &= {\bf p}_{i}/m dt 
+{\bf r}_{i} &= \frac{{\bf p}_{i}}{m_{i}} dt 
 \end{align}
 $$
