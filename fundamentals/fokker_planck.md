@@ -45,6 +45,5 @@ $$
 {\bf 0} & {\bf 0}  \\
 {\bf 0} & {\bf D}_{pp}
 \end{pmatrix}
-
 \end{align}
 $$
