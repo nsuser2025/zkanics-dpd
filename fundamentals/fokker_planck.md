@@ -54,6 +54,7 @@ $$
 $$
 <p>
 式 5 に対応する Fokker-Planck 方程式の項はそれぞれ次式で表される. 
+ただし, $i = j$ 項は DPD はゼロになることを考慮した.
 </p>
 $$
 \begin{align}
@@ -64,6 +65,8 @@ $$
 \frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
 ({\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} \rho({\bf r},{\bf p},t))
 &= \frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
-\sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij}{\bf e}_{ji} \rho({\bf r},{\bf p},t) \tag{7}
+\sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij}{\bf e}_{ji} \rho({\bf r},{\bf p},t) \\
+&= -\frac{1}{2} \sum_{i}\sum_{j \neq i} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+\sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij}{\bf e}_{ij} \rho({\bf r},{\bf p},t) \tag{7}
 \end{align}
 $$
