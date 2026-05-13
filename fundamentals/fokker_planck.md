@@ -50,6 +50,7 @@ $$
 <p>
 ${\bf D}_{\rm pp} \equiv {\bf B}^{\rm T}_{\rm p}{\bf B}_{\rm p}$ で,
 ${\bf B}_{\rm p} \equiv ({\bf B}_{\rm p1}, {\bf B}_{\rm p2}, \cdots, {\bf B}_{\rm pN})$
-とする.
+とすると, ${\bf B}_{\rm pi} = \sum_{j \neq i} \sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$
+である.
 </p>
 
