@@ -64,6 +64,6 @@ $$
 \frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
 ({\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} \rho({\bf r},{\bf p},t))
 &= \frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
-\sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij'}{\bf e}_{ij'} \rho({\bf r},{\bf p},t) \tag{7}
+\sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij}{\bf e}_{ji} \rho({\bf r},{\bf p},t) \tag{7}
 \end{align}
 $$
