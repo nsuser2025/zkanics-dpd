@@ -19,3 +19,8 @@ L_{\rm D}\rho({\bf r},{\bf p},t)
 \tag{12}
 \end{align}
 $$
+<p>
+平衡状態では $L_{\rm C}\rho_{\rm eq} = 0$, $L_{\rm D}\rho_{\rm eq} = 0$ が満たされている.
+ここで, $\partial \rho_{\rm eq}/\partial {\bf p}_{i} = -\beta {\bf v}_{i} \rho_{\eq}$
+より, 次式が満たされたとき, $L_{\rm D}\rho_{\rm eq} = 0$ が成り立つ.
+</p>
