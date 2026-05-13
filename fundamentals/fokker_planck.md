@@ -91,13 +91,13 @@ $$
 \end{align}
 $$
 <p>
-ここで $({\bf a} \otimes {\bf b}){\bf X} = {\bf a}({\bf b}\cdot {|bf X})$ より, 
+ここで $({\bf a} \otimes {\bf b}){\bf X} = {\bf a}({\bf b}\cdot {\bf X})$ より, 
 </p>
 $$
 \begin{align}
 \frac{1}{2} \sum_{i} \sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij})
 \frac{\partial}{\partial {\bf p}_{i}} \cdot
-{\bf e}_{ij} \biggl[{\bf e}_{ij} \dot
+{\bf e}_{ij} \biggl[{\bf e}_{ij} \cdot
 \biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
 \rho({\bf r},{\bf p},t) \biggr] \tag{8}
 \end{align}
