@@ -1,5 +1,5 @@
 <p>
-<u>Fokker-Planck 方程式</u>
+<u>DPDのIto公式</u>
 </p>
 $$
 \begin{align}
