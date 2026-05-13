@@ -55,7 +55,8 @@ ${\bf B}_{j} \equiv ({\bf B}_{1, j}, {\bf B}_{2, j}, \cdots, {\bf B}_{N, j})$
 </p>
 $$
 \begin{align}
-\frac{\partial^{2} {\bf D}'_{i,j}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+\frac{\partial^{2} {\bf D}'_{ij}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+&= \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \sum_{j'} {\bf B}^{\rm T}_{i,j'}{\bf B}_{j,j'} 
 \end{align}
 $$
 
