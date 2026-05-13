@@ -30,7 +30,7 @@ $$
 \begin{align}
 df &= \sum_{i} \frac{df}{d{\bf r}_{i}} \frac{{\bf p}_{i}}{m_{i}} dt
 + \sum_{i} \frac{df}{d{\bf p}_{i}} {\bf A}_{i}dt
-&+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} 
++ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} 
 \sum_{j' \neq i}\sum_{j'' \neq j} {\bf B}_{i,j'}^{\rm T} {\bf B}_{j,j''} dW_{ij'}dW_{jj''} \tag{4}
 \end{align}
 $$
