@@ -32,8 +32,8 @@ $$
 df &= \sum_{i} \frac{df}{d{\bf r}_{i}} \cdot \frac{{\bf p}_{i}}{m_{i}} dt
 + \sum_{i} \frac{df}{d{\bf p}_{i}} \cdot {\bf A}_{i}dt \\
 &+ \frac{1}{2} \sum_{i,j}\sum_{j' \neq i}\sum_{j'' \neq j}
-({\bf B}_{i,j'}\otimes{\bf B}_{j,j''}) ::  
-\frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+\biggl[({\bf B}_{i,j'}\otimes{\bf B}_{j,j''}) ::  
+\frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \biggr]
 dW_{ij'}dW_{jj''} \tag{4}
 \end{align}
 $$
@@ -46,15 +46,17 @@ $dW_{ij'}dW_{jj''} = (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt$
 $$
 \begin{align}
 &\frac{1}{2} \sum_{i,j}\sum_{j' \neq i}\sum_{j'' \neq j} 
-({\bf B}_{i,j'} \otimes {\bf B}_{j,j''})
-:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} dW_{ij'}dW_{jj''} \\
+\biggl[({\bf B}_{i,j'} \otimes {\bf B}_{j,j''})
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \biggr] dW_{ij'}dW_{jj''} \\
 &= \frac{1}{2} \sum_{i,j}\sum_{j' \neq i}\sum_{j'' \neq j}
-({\bf B}_{i,j'} \otimes {\bf B}_{j,j''}) :: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} 
+\biggl[ ({\bf B}_{i,j'} \otimes {\bf B}_{j,j''})
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \biggr]
 (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt \\
-&= \frac{1}{2} \sum_{i} \sum_{j' \neq i} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{i}}
-{\bf B}_{i,j'}^{\rm T} {\bf B}_{i,j'} dt
-+ \frac{1}{2} \sum_{i,j} 
-\frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} {\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} dt \tag{5}
+&= \frac{1}{2} \sum_{i} \sum_{j' \neq i} \biggl[
+({\bf B}_{i,j'} \otimes {\bf B}_{i,j'})
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{i}} \biggr] dt
++ \frac{1}{2} \sum_{i,j} \biggl[ ({\bf B}_{i,j} \otimes {\bf B}_{j,i})
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \biggr] dt \tag{5}
 \end{align}
 $$
 <p>
