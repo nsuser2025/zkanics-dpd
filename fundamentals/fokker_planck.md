@@ -48,9 +48,8 @@ $$
 \end{align}
 $$
 <p>
-${\bf D}_{\rm pp} \equiv {\bf B}^{\rm T}_{\rm p}{\bf B}_{\rm p}$ で,
-${\bf B}_{\rm p} \equiv ({\bf B}_{\rm p1}, {\bf B}_{\rm p2}, \cdots, {\bf B}_{\rm pN})$
-とすると, ${\bf B}_{\rm pi} = \sum_{j \neq i} \sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$
-である.
+${\bf D}_{\rm pp} \equiv \sum_{j} {\bf B}^{\rm T}_{{\rm p}, j}{\bf B}_{{\rm p}, j}$ で,
+${\bf B}_{{\rm p}, j} \equiv ({\bf B}_{{\rm p1}, j}, {\bf B}_{{\rm p2}, j}, \cdots, {\bf B}_{{\rm pN}, j})$
+とすると, ${\bf B}_{\rm pi,j} = \sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ である.
 </p>
 
