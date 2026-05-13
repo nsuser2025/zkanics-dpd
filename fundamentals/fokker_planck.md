@@ -70,8 +70,8 @@ $$
 &= \frac{1}{2} \sum_{i} \sum_{j' \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij'}) \frac{\partial}{\partial {\bf p}_{i}}
 \cdot \biggl[({\bf e}_{ij'} \otimes {\bf e}_{ij'}) 
 \frac{\partial}{\partial {\bf p}_{i}} \rho({\bf r},{\bf p},t) \biggr] \tag{6} \\
-\frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
-({\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} \rho({\bf r},{\bf p},t))
+&\frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+({\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} \rho({\bf r},{\bf p},t)) \\
 &= \frac{1}{2} \sum_{ij} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
 \sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij}{\bf e}_{ji} \rho({\bf r},{\bf p},t) \\
 &= -\frac{1}{2} \sum_{i}\sum_{j \neq i} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
