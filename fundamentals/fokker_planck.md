@@ -38,12 +38,18 @@ $$
 $$
 \begin{align}
 {\bf D} &= \begin{pmatrix}
-{\bf D}_{rr} & {\bf D}_{rp}  \\
-{\bf D}_{pr} & {\bf D}_{pp}
+{\bf D}_{\rm rr} & {\bf D}_{\rm rp}  \\
+{\bf D}_{\rm pr} & {\bf D}_{\rm pp}
 \end{pmatrix}
 = \begin{pmatrix}
 {\bf 0} & {\bf 0}  \\
-{\bf 0} & {\bf D}_{pp}
+{\bf 0} & {\bf D}_{\rm pp}
 \end{pmatrix}
 \end{align}
 $$
+<p>
+${\bf D}_{\rm pp} \equiv {\bf B}^{\rm T}_{\rm p}{\bf B}_{\rm p}$ で,
+${\bf B}_{\rm p} \equiv ({\bf B}_{\rm p1}, {\bf B}_{\rm p2}, \cdots, {\bf B}_{\rm pN})$
+とする.
+</p>
+
