@@ -38,9 +38,10 @@ dW_{ij'}dW_{jj''} \tag{4}
 \end{align}
 $$
 <p>
-ここで $dW_{ij}=dW_{ji}$ を満たす独立なウィーナー過程を仮定すると，
+ここで $dW_{ij}=dW_{ji}$ を満たす独立なウィーナー過程とすると,
+式 4 の第二項は,
 $dW_{ij'}dW_{jj''} = (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt$
-より, 式 4 の第二項は次式で表される.(Ref. Espanol1995 Eq. 5)
+より, 次式で表される.(Ref. Espanol1995 Eq. 5)
 </p>
 $$
 \begin{align}
