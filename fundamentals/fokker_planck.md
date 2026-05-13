@@ -67,6 +67,9 @@ Fokker-Planck 方程式の ${\bf D}'$ 依存項
 $$
 \begin{align}
 \frac{1}{2} \sum_{i,j} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}( {\bf D}'_{ij} 
-\rho({\bf r}, {\bf p}, t))
+\rho({\bf r}, {\bf p}, t)) 
+&= \frac{1}{2} \sum_{i,j} \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \sum_{j'}
+\sigma \omega_{\rm R}(r_{ij'}){\bf e}^{\rm T}_{ij'} \sigma \omega_{\rm R}(r_{jj'}){\bf e}_{jj'}
+\rho({\bf r}, {\bf p}, t)) 
 \end{align}
 $$
