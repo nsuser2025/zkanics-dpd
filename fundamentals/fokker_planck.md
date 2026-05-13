@@ -44,8 +44,9 @@ $dW_{ij'}dW_{jj''} = (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt$
 </p>
 $$
 \begin{align}
-&\frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} 
-\sum_{j' \neq i}\sum_{j'' \neq j} {\bf B}_{i,j'}^{\rm T} {\bf B}_{j,j''} dW_{ij'}dW_{jj''} \\
+&\frac{1}{2} \sum_{i,j}\sum_{j' \neq i}\sum_{j'' \neq j} 
+({\bf B}_{i,j'} \otimes {\bf B}_{j,j''})
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} dW_{ij'}dW_{jj''} \\
 &= \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} 
 \sum_{j' \neq i}\sum_{j'' \neq j} {\bf B}_{i,j'}^{\rm T} {\bf B}_{j,j''}
 (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt \\
