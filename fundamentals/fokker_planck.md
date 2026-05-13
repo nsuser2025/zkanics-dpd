@@ -102,3 +102,25 @@ $$
 \rho({\bf r},{\bf p},t) \biggr] \biggr\} 
 \end{align}
 $$
+<p>
+ここで $[\cdots]$ はスカラーで, $\partial {\bf e}_{ij}/\partial {\bf p}_{i} = 0$
+であることから, 次式が成り立つことを考慮する.
+</p>
+$$
+\begin{align}
+\frac{\partial}{\partial {\bf p}_{i}} \cdot ({\bf {e}_{ij}}[\cdots])
+&= {\bf {e}_{ij}} \cdot \frac{\partial}{\partial {\bf p}_{i}} ([\cdots])
+\end{align}
+$$
+<p>
+最終的な Fokker-Planck 方程式の揺動力項は次式で表される.  
+</p>
+$$
+\begin{align}
+\frac{1}{2} \sum_{i} \sum_{j \neq i} \sigma^{2}\omega^{2}_{\rm R}(r_{ij})
+{\bf e}_{ij} \cdot \biggl\{ \frac{\partial}{\partial {\bf p}_{i}}
+\biggl[{\bf e}_{ij} \cdot
+\biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
+\rho({\bf r},{\bf p},t) \biggr] \biggr\} \tag{9} 
+\end{align}
+$$
