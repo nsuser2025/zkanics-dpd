@@ -55,6 +55,8 @@ ${\bf B}_{{\rm p}, j} \equiv ({\bf B}_{{\rm p1}, j}, {\bf B}_{{\rm p2}, j}, \cdo
 $$
 \begin{align}
 \frac{\partial^{2} {\bf D}_{{\rm p}i{\rm p}j}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
+&= \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \sum_{j'} 
+{\bf B}^{\rm T}_{{\rm pi}, j'}{\bf B}_{{\rm pj}, j'}
 \end{align}
 $$
 
