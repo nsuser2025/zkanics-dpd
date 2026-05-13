@@ -28,8 +28,14 @@ $$
 </p>
 $$
 \begin{align}
-df &= \sum_{i} \frac{df}{d{\bf r}_{i}} d{\bf r}_{i} + \sum_{i} \frac{df}{d{\bf p}_{i}} d{\bf p}_{i} \\
-&+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} d{\bf p}^{\rm T}_{i}d{\bf p}_{j}
-\tag{3}
+df &= \sum_{i} \frac{df}{d{\bf r}_{i}} \frac{{\bf p}_{i}}{m_{i}} dt
++ \sum_{i} \frac{df}{d{\bf p}_{i}} {\bf A}_{i}dt
+&+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} 
+\sum_{j' \neq i}\sum_{j'' \neq j} {\bf B}_{i,j'}^{\rm T} {\bf B}_{j,j''} dW_{ij'}dW_{jj''} \tag{4}
 \end{align}
 $$
+<p>
+ここで伊藤公式のルール
+$dW_{ij'}dW_{jj''} = (\delta_{ij}\delta_{j'j''} + \delta_{ij''}\delta_{j'j}) dt$
+より, 式 4 の第二項は次式で表される.
+</p>
