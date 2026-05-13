@@ -51,12 +51,11 @@ $$
 ${\bf D}' \equiv \sum_{j} {\bf B}^{\rm T}_{j}{\bf B}_{j}$ で,
 ${\bf B}_{j} \equiv ({\bf B}_{1, j}, {\bf B}_{2, j}, \cdots, {\bf B}_{N, j})$
 とすると, ベクトル ${\bf B}_{i,j}$ は $\sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ として定義される.
+ここで, ${\bf D}'_{ij} = \sum_{j'} {\bf B}^{\rm T}_{i,j'}{\bf B}_{j,j'}$ であるため
 </p>
 $$
 \begin{align}
-\frac{\partial^{2} {\bf D}_{{\rm p}i{\rm p}j}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
-&= \frac{\partial^{2}}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \sum_{j'} 
-{\bf B}^{\rm T}_{{\rm pi}, j'}{\bf B}_{{\rm pj}, j'}
+\frac{\partial^{2} {\bf D}'_{i,j}}{\partial {\bf p}_{i}\partial {\bf p}_{j}}
 \end{align}
 $$
 
