@@ -70,3 +70,14 @@ $$
 \sigma^{2}\omega^{2}_{\rm R}(r_{ij}){\bf e}^{\rm T}_{ij}{\bf e}_{ij} \rho({\bf r},{\bf p},t) \tag{7}
 \end{align}
 $$
+<p>
+以上より, 揺動力に起因する Fokker-Planck 方程式の項は次式となる.  
+</p>
+$$
+\begin{align}
+\frac{1}{2} \sum_{i} \sum_{j \neq i} (\sigma^{2}\omega^{2}_{\rm R}(r_{ij}))
+{\bf e}_{ij}^{\rm T}{\bf e}_{ij} \frac{\partial}{\partial {\bf p}_{i}}
+\biggl( \frac{\partial}{\partial {\bf p}_{i}} - \frac{\partial}{\partial {\bf p}_{j}} \biggr)
+\rho({\bf r},{\bf p},t) \tag{8}
+\end{align}
+$$
