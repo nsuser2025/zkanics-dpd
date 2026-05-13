@@ -33,5 +33,5 @@ $$
 \end{align}
 $$
 <p>
-DPD では $\sigma = \sqrt(2\gamma k_{\rm B}T)$ で 式 13 の関係式を用いて温度制御を行う. 
+DPD では $\sigma = \sqrt{2\gamma k_{\rm B}T}$ で 式 13 の関係式を用いて温度制御を行う. 
 </p>
