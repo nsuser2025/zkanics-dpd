@@ -20,5 +20,16 @@ df &= \sum_{i} \frac{df}{d{\bf r}_{i}} d{\bf r}_{i} + \sum_{i} \frac{df}{d{\bf p
 &+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf r}_{i}\partial {\bf r}_{j}} d{\bf r}^{\rm T}_{i}d{\bf r}_{j}
 + \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf r}_{i}\partial {\bf p}_{j}} d{\bf r}^{\rm T}_{i}d{\bf p}_{j}
 + \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} d{\bf p}^{\rm T}_{i}d{\bf p}_{j}
+\tag{3}
+\end{align}
+$$
+<p>
+式 3 に式 1, 2 を代入し, $dt^{2}$ 項と 1 次の $dW$ 項を無視すると, 次式が得られる.
+</p>
+$$
+\begin{align}
+df &= \sum_{i} \frac{df}{d{\bf r}_{i}} d{\bf r}_{i} + \sum_{i} \frac{df}{d{\bf p}_{i}} d{\bf p}_{i} \\
+&+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} d{\bf p}^{\rm T}_{i}d{\bf p}_{j}
+\tag{3}
 \end{align}
 $$
