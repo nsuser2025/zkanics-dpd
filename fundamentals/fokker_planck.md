@@ -1,3 +1,6 @@
+<p>
+次式の DPD 運動方程式を考える.  
+</p>
 $$
 \begin{align}
 d{\bf r}_{i} &= \frac{{\bf p}_{i}}{m_{i}} dt \tag{1} \\
