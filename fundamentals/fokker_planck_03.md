@@ -27,6 +27,10 @@ $$
 $$
 \begin{align}
 \gamma \omega_{\rm D}(r_{ij})({bf e}_{ij}\cdot {\bf v}_{ij})
--\beta \frac{\sigma^{2}}{2} {\bf e}_{ij} \cdot ({\bf v}_{ij}) \rho_{\rm eq} = 0
+-\beta \frac{\sigma^{2}}{2} \omega^{2}_{\rm R}(r_{ij})
+({\bf e}_{ij} \cdot {\bf v}_{ij}) \rho_{\rm eq} = 0
 \end{align}
 $$
+<p>
+ 
+</p>
