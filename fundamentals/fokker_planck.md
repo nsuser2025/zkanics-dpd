@@ -108,8 +108,8 @@ $$
 </p>
 $$
 \begin{align}
-\frac{\partial}{\partial {\bf p}_{i}} \cdot ({\bf {e}_{ij}}[\cdots])
-&= {\bf {e}_{ij}} \cdot \frac{\partial}{\partial {\bf p}_{i}} ([\cdots])
+\frac{\partial}{\partial {\bf p}_{i}} \cdot ({\bf {e}}_{ij}[\cdots])
+&= {\bf {e}}_{ij} \cdot \frac{\partial}{\partial {\bf p}_{i}} ([\cdots])
 \end{align}
 $$
 <p>
