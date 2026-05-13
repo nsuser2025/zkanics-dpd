@@ -37,3 +37,14 @@ df &= \sum_{i} \frac{df}{d{\bf r}_{i}} \cdot \frac{{\bf p}_{i}}{m_{i}} dt
 dW_{ij'}dW_{jj''} \tag{4}
 \end{align}
 $$
+<p>
+ハミルトニアン項（第一項）と散逸項（第二項）に相当する Fokker-Planck 方程式の各項は次式で表される.  
+</p>
+$$
+\begin{align}
+&-\sum_{i} \frac{{\bf p}_{i}}{m_{i}} \cdot \frac{\partial}{\partial {\bf r}_{i}} \rho({\bf r},{\bf p},t) \tag{5} \\
+&-\sum_{i}\sum_{j \neq i} \frac{{\bf F}^{\rm C}_{ij}} \cdot \frac{\partial}{\partial {\bf p}_{i}} \rho({\bf r},{\bf p},t) 
++ \sum_{i}\sum_{j \neq i} \gamma \omega_{\rm D}(r_{ij}) \frac{\partial}{\partial {\bf p}_{i}}
+\cdot \{({\bf e}_{ij}\cdot {\bf v}_{ij}){\bf e}_{ij}\} \tag{6}
+\end{align}
+$$
