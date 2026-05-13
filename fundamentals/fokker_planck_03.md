@@ -29,7 +29,7 @@ $$
 &\gamma \omega_{\rm D}(r_{ij})({\bf e}_{ij}\cdot {\bf v}_{ij})\rho_{\rm eq}
 -\beta \frac{\sigma^{2}}{2} \omega^{2}_{\rm R}(r_{ij})
 ({\bf e}_{ij} \cdot {\bf v}_{ij}) \rho_{\rm eq} = 0 \\
-&2 \gamma k_{\rm B}T \omega_{\rm D}(r_{ij}) = \sigma^{2} \omega_{\rm R}(r_{ij}) \tag{13}  
+&2 \gamma k_{\rm B}T \omega_{\rm D}(r_{ij}) = \sigma^{2} \omega^{2}_{\rm R}(r_{ij}) \tag{13}  
 \end{align}
 $$
 <p>
