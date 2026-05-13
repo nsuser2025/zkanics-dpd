@@ -22,5 +22,11 @@ $$
 <p>
 平衡状態では $L_{\rm C}\rho_{\rm eq} = 0$, $L_{\rm D}\rho_{\rm eq} = 0$ が満たされている.
 ここで, $\partial \rho_{\rm eq}/\partial {\bf p}_{i} = -\beta {\bf v}_{i} \rho_{\rm eq}$
-より, 次式が満たされたとき, $L_{\rm D}\rho_{\rm eq} = 0$ が成り立つ.
+より, 次式が成り立つとき $L_{\rm D}\rho_{\rm eq} = 0$ になる.
 </p>
+$$
+\begin{align}
+\gamma \omega_{\rm D}(r_{ij})({bf e}_{ij}\cdot {\bf v}_{ij})
+-\beta \frac{\sigma^{2}}{2} {\bf e}_{ij} \cdot ({\bf v}_{ij}) \rho_{\rm eq} = 0
+\end{align}
+$$
