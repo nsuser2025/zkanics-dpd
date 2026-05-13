@@ -49,7 +49,7 @@ $$
 &= \frac{1}{2} \sum_{i} \sum_{j' \neq i} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{i}}
 {\bf B}_{i,j'}^{\rm T} {\bf B}_{i,j'} dt
 + \frac{1}{2} \sum_{i,j} 
-\frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} {\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} dt tag{5}
+\frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} {\bf B}_{i,j}^{\rm T} {\bf B}_{j,i} dt \tag{5}
 \end{align}
 $$
 <p>
