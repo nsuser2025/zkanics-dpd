@@ -40,6 +40,11 @@ $$
 {\bf D} &= \begin{pmatrix}
 {\bf D}_{rr} & {\bf D}_{rp}  \\
 {\bf D}_{pr} & {\bf D}_{pp}
-\end{pmatrix} 
+\end{pmatrix}
+= \begin{pmatrix}
+{\bf 0} & {\bf 0}  \\
+{\bf 0} & {\bf D}_{pp}
+\end{pmatrix}
+
 \end{align}
 $$
