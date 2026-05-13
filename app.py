@@ -25,6 +25,7 @@ note_paths = {
      "DEM06": "DEM/stl_format.md",
      "FP01": "fundamentals/fokker_planck_01.md",
      "FP02": "fundamentals/fokker_planck_02.md",
+     "FP03": "fundamentals/fokker_planck_03.md",
      "MDPD01": "MDPD/mdpd_fundamental.md",
      "MDPD02": "MDPD/other_dpds.md", 
      "MDPD03": "MDPD/refs.md",
