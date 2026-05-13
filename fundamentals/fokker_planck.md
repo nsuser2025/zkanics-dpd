@@ -20,9 +20,9 @@ df &= \sum_{i} \frac{df}{d{\bf r}_{i}} \cdot d{\bf r}_{i}
 + \sum_{i} \frac{df}{d{\bf p}_{i}} \cdot d{\bf p}_{i} \\
 &+ \frac{1}{2} \sum_{i,j} (d{\bf r}_{i} \otimes d{\bf r}_{j}) 
 :: \frac{\partial^{2} f}{\partial {\bf r}_{i} \partial {\bf r}_{j}} 
-+ \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf r}_{i}\partial {\bf p}_{j}} d{\bf r}^{\rm T}_{i}d{\bf p}_{j}
-+ \frac{1}{2} \sum_{i,j} \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} d{\bf p}^{\rm T}_{i}d{\bf p}_{j}
-\tag{3}
++ \sum_{i,j} (d{\bf r}_{i} \otimes d{\bf p}_{j}) :: \frac{\partial^{2} f}{\partial {\bf r}_{i}\partial {\bf p}_{j}}
++ \frac{1}{2} \sum_{i,j} (d{\bf p}_{i} \otimes d{\bf p}_{j})
+:: \frac{\partial^{2} f}{\partial {\bf p}_{i}\partial {\bf p}_{j}} \tag{3}
 \end{align}
 $$
 <p>
