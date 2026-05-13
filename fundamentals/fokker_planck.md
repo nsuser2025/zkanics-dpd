@@ -49,8 +49,8 @@ $$
 $$
 <p>
 ${\bf D}' \equiv \sum_{j} {\bf B}^{\rm T}_{j}{\bf B}_{j}$ で,
-${\bf B}_{{\rm p}, j} \equiv ({\bf B}_{{\rm p1}, j}, {\bf B}_{{\rm p2}, j}, \cdots, {\bf B}_{{\rm pN}, j})$
-とすると, ベクトル ${\bf B}_{\rm pi,j}$ は $\sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ として定義される.
+${\bf B}_{j} \equiv ({\bf B}_{1, j}, {\bf B}_{2, j}, \cdots, {\bf B}_{N, j})$
+とすると, ベクトル ${\bf B}_{i,j}$ は $\sigma \omega_{\rm R}(r_{ij}) {\bf e}_{ij}$ として定義される.
 </p>
 $$
 \begin{align}
