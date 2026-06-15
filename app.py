@@ -32,6 +32,7 @@ note_paths = {
      "MESH2LAMMPS01": "MESH2LAMMPS/mesh2lammps.md",
      "MESH2LAMMPS02": "MESH2LAMMPS/trimesh.md",
      "MESH2LAMMPS03": "MESH2LAMMPS/trimesh_cylinder.md",
+     "FUJII20260615": "fujii/note20260615.md",
 }
 
 for key, path in note_paths.items():
