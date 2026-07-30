@@ -34,6 +34,7 @@ note_paths = {
      "MESH2LAMMPS03": "MESH2LAMMPS/trimesh_cylinder.md",
      "FUJII20260615": "fujii/note20260615.md",
      "KANEKO20260709": "kaneko/note20260709.md",
+     "SHINJI2026": "shinji/note2026.md",
      "QCXMS2026": "GCMS/qcxms.md",
 }
 
