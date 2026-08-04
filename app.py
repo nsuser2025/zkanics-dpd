@@ -36,6 +36,7 @@ note_paths = {
      "KANEKO20260709": "kaneko/note20260709.md",
      "SHINJI2026": "shinji/note2026.md",
      "IKEMOTO2026": "ikemoto/note20260731.md",
+     "AKATSUKA2026": "akatsuka/note20260804.md",
      "QCXMS2026": "GCMS/qcxms.md",
 }
 
