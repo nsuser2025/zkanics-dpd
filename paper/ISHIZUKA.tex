@@ -54,7 +54,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \author{Ryosuke ISHIZUKA}
 \affiliation[ZKA]
-{Zkanics F.P.S., SIDE-6 Senriyama-West, Suita, Osaka, 565-0851, Japan}
+{Computational Fluid Dynamics Division, Zkanics F.P.S., SIDE-6 Senriyama-West, Suita, Osaka, 565-0851, Japan}
 \email{ryo.ishizuka@gmail.com}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -62,8 +62,8 @@
 %% A short title can be given as a *suggestion* for running headers.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[\texttt{achemso} demonstration]
-{Li/Na Ions Desolvation in Solvate Ionic Liquids:
-Molecular Insights From Non-Polarizable and Machine-Learning Force Fields}
+{Role of Fluid Particle Mass and Impurities in Coalescence-Induced
+Droplet Jumping on Solid Surfaces}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,12 +73,7 @@ Molecular Insights From Non-Polarizable and Machine-Learning Force Fields}
 %% contents will be gobbled.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-%Diffusion of lithium ions in Li-glyme solvate ionic liquids
-%and high-concentrate electrolyte were investigated through 
-%universal machine learning interatomic potential (MLIP).
-%%
-%Structural properties.
-%%
+
 \end{abstract}
 
 %TOC Graphic.
@@ -94,84 +89,62 @@ Molecular Insights From Non-Polarizable and Machine-Learning Force Fields}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \clearpage
 \section{INTRODUCTION}
-Over the past decade, machine-learning force fields (MLFFs) have 
-emerged as a transformative approach in computational chemistry.
-In these force fields, interatomic interactions are represented by artificial 
-neural networks trained on structural data obtained 
-from \textit{ab initio} molecular dynamics (AIMD) simulations.
-MLFF-based simulations can therefore achieve AIMD-level 
-accuracy for many materials.
-This success, however, has prompted a reconsideration of 
-the validity of the traditionally employed 
-non-polarizable force fields.
-In particular, the simulation of ionic liquids (ILs) 
-is a prototypical case in which non-polarizable 
-force fields have been extensively employed.
-ILs are molten salts consisting of organic cations 
-and organic/inorganic anions.
-By varying the combinations of cations and anions,
-their electrochemical properties, such as 
-ionic conductivity, can be tuned.
-ILs have therefore attracted great attention as ``designer solvents''
-in electrochemistry and have also been a long-standing subject 
-in the community of molecular simulations.
-One of the widely used non-polarizable force fields
-for ILs is the OPLS-based model developed by Lopes and Padua.
-Simulations based on their force fields
-can reproduce the fundamental static properties
-of ILs with acceptable accuracy.
-However, the simulated diffusion of ions 
-is much slower than observed experimentally,
-which primarily results from the inaccurate modeling 
-of electrostatic interactions between ions.
-Because the surrounding molecules strongly affect 
-the electronic structure of ions, the ionic charge in ILs
-(often referred to as effective charge) cannot be 
-considered fixed and instead adopts non-integer values.
-To account for the fluctuation and transfer of the ionic charge,
-considerable effort has been devoted to more realistic modeling 
-of electrostatic interactions.
-The charge-scaled force field, in which all atomic partial 
-charges of ions are uniformly scaled by a non-integer factor, 
-has been widely employed as the simplest approach.
-This charge scaling effectively weakens the ion-ion interactions,
-thereby accelerating ion diffusion.
-However, since the scaling factor is empirically determined
-to reproduce the experimental properties of ILs,
-reliable experimental data are required.
-Furthermore, simulations using this force field provide 
-limited molecular-level insights due to the inherent lack
-of physical justification for the scaling factor.
-To overcome this limitation, Ishizuka and Matubayasi 
-developed the MD/DFT self-consistent scheme to determine 
-the effective charge within the quantum mechanical framework~\cite{Ishizuka2016, Ishizuka2017}.
-They successfully determined the effective charge
-via the population analysis of the electron density 
-of ILs without relying on any experimental data.
-In contrast to MLFFs, these methods are based on non-polarizable force fields, 
-so the instantaneous forces acting on each atom are not consistent
-with the Hellmann-Feynman forces for the corresponding atomic configurations.
-Nevertheless, it remains unclear why refinements of
-non-polarizable force fields are so successful 
-in reproducing both the static and dynamic properties of ILs.
-To clarify this, we perform a comparative study of non-polarizable
-and machine-learning force fields through simulations of 
-${\rm Li}^{+}$ and ${\rm Na}^{+}$ desolvation 
-in glyme-based solvate ILs. 
+On a rainy day, raindrops on a car window merge together and race down the glass like shooting stars.
+Droplet coalescence on solid surfaces is a fascinating interfacial phenomenon
+in which the interplay between fluid–fluid and fluid–solid interfaces
+governs the resulting droplet dynamics.
+Particularly on superhydrophobic surfaces, this phenomenon exhibits a dramatic behavior:
+instead of simply sliding along the surface, the coalesced droplet
+can spontaneously jump away from it.
+This phenomenon, commonly referred to as coalescence-induced droplet jumping,
+has attracted considerable attention both as a fascinating interfacial phenomenon
+and for its potential industrial applications.
 
-The glyme-based ionic liquids are characterized by their unique 
-solvation structures, where a lithium ion is coordinated by a single glyme
-molecule to form a stable solvate complex, as represented in Figure~\ref{fig:glyme_ILs}.
-%%%%
-Recent experimental studies suggest that the several tri-glyme is.
-The binding strength between ions and 
-%%%%
-In the present work, therefore, our interest lies not in the effectiveness 
-and performance of this ionic liquid as an electrolyte, 
-but in its use as a benchmark for machine-learning and 
-non-polarizable force fields.
-%%%%
-%%%%
+The jumping dynamics are governed by the interplay among capillary forces,
+viscous dissipation, inertia, and droplet--surface interactions.
+Previous studies have primarily focused on the effects of macroscopic properties,
+such as surface wettability, droplet size, viscosity, and surface tension,
+on coalescence-induced droplet jumping.
+In continuum descriptions, droplets are generally treated as homogeneous fluids,
+and microscopic variations in particle properties within the droplet
+are not explicitly considered.
+Consequently, it remains unclear how microscopic particle-level properties,
+such as particle mass and the presence of impurities,
+affect the conversion of interfacial energy into the translational motion
+of the coalesced droplet.
+
+Mesoscopic particle-based simulations provide a useful framework
+for addressing this question because they can describe hydrodynamic behavior
+while retaining explicit particle degrees of freedom.
+In particular, many-body dissipative particle dynamics (MDPD)
+can reproduce liquid--vapor phase separation and provide a convenient
+particle-based description of liquid droplets and their interactions with solid surfaces.
+The explicit representation of individual particles also makes it possible
+to independently vary particle properties, such as mass,
+and to introduce a small number of particles with different properties
+as impurities.
+This provides a route to investigate how microscopic heterogeneity
+affects the macroscopic dynamics of droplet coalescence and jumping.
+
+In this work, we use MDPD simulations to investigate the roles of particle mass
+and impurities in coalescence-induced droplet jumping on solid surfaces.
+Two droplets are first equilibrated independently on a solid surface
+and are then brought into close proximity to initiate coalescence.
+By systematically varying the particle mass and introducing impurities,
+we examine their effects on the post-coalescence droplet dynamics.
+In particular, we analyze the jumping velocity and direction
+and relate the observed behavior to momentum and energy transfer during coalescence.
+Our results demonstrate how particle-level properties,
+which are not explicitly represented in conventional continuum descriptions,
+can influence the macroscopic dynamics of coalescing droplets.
+These findings provide a particle-level perspective on the physical mechanisms
+governing coalescence-induced droplet jumping on solid surfaces.\clearpage
+
+\section{MDPD SIMULATIONS}
+
+\section{RESULTS AND DISCUSSION}
+
+\section{CONCLUSIONS}
 
 \clearpage
 
@@ -235,15 +208,13 @@ while those from PBE-D3 are shown on the vertical axis.
 \end{eqnarray}
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The "Acknowledgement" section can be given in all manuscript
 %% classes.  Rather than use \section, an appropriate macro is
 %% provided that will always work.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \acknowledgement
-The author gratefully acknowledges the support 
+We gratefully acknowledges the support 
 of the Zkanics F.P.S. \\ 
 (https://www.linkedin.com/in/zkanics-side6).
 
