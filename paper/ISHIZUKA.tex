@@ -62,7 +62,7 @@
 %% A short title can be given as a *suggestion* for running headers.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title[\texttt{achemso} demonstration]
-{Role of Fluid Particle Mass and Impurities in Coalescence-Induced
+{Role of Fluid Particle Properties and Impurities in Coalescence-Induced
 Droplet Jumping on Solid Surfaces}
 
 \begin{document}
@@ -90,24 +90,39 @@ Droplet Jumping on Solid Surfaces}
 \clearpage
 \section{INTRODUCTION}
 On a rainy day, raindrops on a car window merge together and race down the glass like shooting stars.
-Droplet coalescence on solid surfaces is a fascinating interfacial phenomenon
-in which the interplay between fluid–fluid and fluid–solid interfaces
-governs the resulting droplet dynamics.
-Particularly on superhydrophobic surfaces, this phenomenon exhibits a dramatic behavior:
-instead of simply sliding along the surface, the coalesced droplet
-can spontaneously jump away from it.
-This phenomenon, commonly referred to as coalescence-induced droplet jumping,
-has attracted considerable attention both as a fascinating interfacial phenomenon
-and for its potential industrial applications.
+Such coalescence events are ubiquitous in nature and technology, and their outcomes
+strongly depend on the characteristics of the underlying surface.
+Droplet coalescence on solid surfaces is a fundamental interfacial phenomenon in which the interplay
+between fluid-fluid and fluid-solid interactions governs the resulting dynamics.
+Particularly on superhydrophobic surfaces, part of the excess surface energy generated during coalescence
+can be converted into translational kinetic energy, enabling the merged droplet to spontaneously
+jump away from the surface.
+This phenomenon, commonly known as coalescence-induced droplet jumping (CIDJ),
+has attracted considerable attention owing to its intriguing physics and potential
+applications in wafer cleaning, watermark prevention, and electronic cooling
+in semiconductor technologies.
+The magnitude of the jumping motion is determined by how efficiently
+the energy released during coalescence is converted into the kinetic energy of the merged droplet.
+The influence of microscopic fluid-particle properties on this energy-conversion process,
+however, remains incompletely understood.
+In the present study, we investigate how fluid particle mass and impurities
+affect CIDJ using many-body dissipative particle dynamics (MDPD) simulations,
+a particle-based mesoscopic simulation technique.
 
+%%%% UC %%%%
+Continuum-based computational fluid dynamics (CFD) methods, such as the volume-of-fluid (VOF)
+and level-set methods, have been widely used to simulate CIDJ. 
 The jumping dynamics are governed by the interplay among capillary forces,
-viscous dissipation, inertia, and droplet--surface interactions.
-Previous studies have primarily focused on the effects of macroscopic properties,
-such as surface wettability, droplet size, viscosity, and surface tension,
-on coalescence-induced droplet jumping.
+viscous dissipation, inertia, and droplet–surface interactions.
+The relative importance of these effects is commonly
+characterized by the dimensionless Ohnesorge number, $Oh$.
 In continuum descriptions, droplets are generally treated as homogeneous fluids,
 and microscopic variations in particle properties within the droplet
 are not explicitly considered.
+
+Previous studies have primarily focused on the effects of macroscopic properties,
+such as surface wettability, droplet size, viscosity, and surface tension,
+on coalescence-induced droplet jumping.
 Consequently, it remains unclear how microscopic particle-level properties,
 such as particle mass and the presence of impurities,
 affect the conversion of interfacial energy into the translational motion
