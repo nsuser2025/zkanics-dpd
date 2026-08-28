@@ -119,42 +119,46 @@ characterized by the dimensionless Ohnesorge number, $Oh$.
 In continuum descriptions, droplets are generally treated as homogeneous fluids,
 making it difficult to explicitly account for microscopic heterogeneity
 in their physicochemical properties.
-%%%% UC %%%%
-Consequently, continuum-based methods may not be sufficient to directly
-address the role of heterogeneity introduced to droplet properties.
-%%%%
+Consequently, continuum-based methods are not well suited to directly
+address the effect of asymmetry between coalescing droplets
+arising from differences in mass, composition, affinity
+for solid surfaces, and miscibility.
 
-Mesoscopic particle-based simulations provide a useful framework
-for addressing this question because they can describe hydrodynamic behavior
+To address this issue, we employ many-body dissipative particle dynamics (MDPD),
+a mesoscopic particle-based simulation technique
+that provides a useful framework for describing fluid flows
 while retaining explicit particle degrees of freedom.
-In particular, many-body dissipative particle dynamics (MDPD)
-can reproduce liquid--vapor phase separation and provide a convenient
-particle-based description of liquid droplets and their interactions with solid surfaces.
-The explicit representation of individual particles also makes it possible
-to independently vary particle properties, such as mass,
-and to introduce a small number of particles with different properties
-as impurities.
-This provides a route to investigate how microscopic heterogeneity
-affects the macroscopic dynamics of droplet coalescence and jumping.
+In contrast to the standard dissipative particle dynamics (DPD),
+the many-body interactions in MDPD generate a non-monotonic
+equation of state (EoS) that exhibits a van der Waals loop
+with a mechanically unstable region,
+where $(\partial p/\partial \rho)_T < 0$.
+This feature enables liquid–vapor coexistence
+to emerge spontaneously within the simulation.
+More importantly, the explicit particle representation of MDPD
+allows the properties of the two coalescing droplets to be independently
+controlled by varying the fluid particles' parameters.
 
-%%%% UC %%%%
-In the present study, we investigate how differences in physicochemical properties
-between the coalescing droplets affect CIDJ using many-body dissipative particle dynamics
-(MDPD) simulations, a particle-based mesoscopic simulation technique.
-%%%% UC %%%%
-In this work, we use MDPD simulations to investigate the roles of particle mass
-and impurities in coalescence-induced droplet jumping on solid surfaces.
-Two droplets are first equilibrated independently on a solid surface
-and are then brought into close proximity to initiate coalescence.
-By systematically varying the particle mass and introducing impurities,
-we examine their effects on the post-coalescence droplet dynamics.
-In particular, we analyze the jumping velocity and direction
-and relate the observed behavior to momentum and energy transfer during coalescence.
-Our results demonstrate how particle-level properties,
-which are not explicitly represented in conventional continuum descriptions,
-can influence the macroscopic dynamics of coalescing droplets.
-These findings provide a particle-level perspective on the physical mechanisms
-governing coalescence-induced droplet jumping on solid surfaces.\clearpage
+In the present study, we investigate how differences in the properties
+of the coalescing droplets affect CIDJ using MDPD simulations.
+First, we validate MDPD as an alternative approach for simulating
+CIDJ by comparing its results with those obtained from
+VOF simulations of two identical droplets.
+Subsequently, we investigate the effects of particle-mass heterogeneity on CIDJ.
+Differences in particle mass do not affect the droplet size,
+contact angle, or surface energy, but they break the symmetry
+of the kinetic moments after coalescence.
+Furthermore, we investigate how asymmetry in surface affinity between
+the two coalescing droplets affects the resulting jumping dynamics
+by varying the interaction between fluid and solid particles.
+Because fluid miscibility represents an important source of chemical asymmetry in CIDJ,
+we investigate the effects of fluid immiscibility by varying
+the interfacial interactions between dissimilar droplets.
+We additionally consider the coalescence of multicomponent
+droplets to examine the effects of compositional heterogeneity on CIDJ.
+In the last section of the paper,
+we provide a summary and discussion of our main findings,
+along with future perspectives for this approach.
 
 \section{}
 \subsection{MDPD SIMULATIONS}
