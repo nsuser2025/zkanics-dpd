@@ -109,28 +109,20 @@ introduces a preferred direction normal to the surface.
 Under suitable conditions, part of the excess surface energy released during coalescence
 can then be converted into net translational motion, leading to droplet jumping.
 What, then, governs droplet jumping when two non-identical droplets coalesce?
-In the present study, we investigate how differences in physicochemical properties
-between the coalescing droplets affect CIDJ using many-body dissipative particle dynamics
-(MDPD) simulations, a particle-based mesoscopic simulation technique.
 
-%%%% UC %%%%
 Continuum-based computational fluid dynamics (CFD) methods, such as the volume-of-fluid (VOF)
-and level-set methods, have been widely used to simulate CIDJ. 
-The jumping dynamics are governed by the interplay among capillary forces,
-viscous dissipation, inertia, and droplet–surface interactions.
+and level-set methods, have been widely used to simulate CIDJ.
+Droplet jumping has been investigated in terms of the effects of fluid and interfacial properties,
+including surface wettability, viscosity, droplet size, and surface tension.
 The relative importance of these effects is commonly
 characterized by the dimensionless Ohnesorge number, $Oh$.
 In continuum descriptions, droplets are generally treated as homogeneous fluids,
-and microscopic variations in particle properties within the droplet
-are not explicitly considered.
-
-Previous studies have primarily focused on the effects of macroscopic properties,
-such as surface wettability, droplet size, viscosity, and surface tension,
-on coalescence-induced droplet jumping.
-Consequently, it remains unclear how microscopic particle-level properties,
-such as particle mass and the presence of impurities,
-affect the conversion of interfacial energy into the translational motion
-of the coalesced droplet.
+making it difficult to explicitly account for microscopic heterogeneity
+in their physicochemical properties.
+%%%% UC %%%%
+Consequently, continuum-based methods may not be sufficient to directly
+address the role of heterogeneity introduced to droplet properties.
+%%%%
 
 Mesoscopic particle-based simulations provide a useful framework
 for addressing this question because they can describe hydrodynamic behavior
@@ -145,6 +137,11 @@ as impurities.
 This provides a route to investigate how microscopic heterogeneity
 affects the macroscopic dynamics of droplet coalescence and jumping.
 
+%%%% UC %%%%
+In the present study, we investigate how differences in physicochemical properties
+between the coalescing droplets affect CIDJ using many-body dissipative particle dynamics
+(MDPD) simulations, a particle-based mesoscopic simulation technique.
+%%%% UC %%%%
 In this work, we use MDPD simulations to investigate the roles of particle mass
 and impurities in coalescence-induced droplet jumping on solid surfaces.
 Two droplets are first equilibrated independently on a solid surface
