@@ -114,15 +114,14 @@ Continuum-based computational fluid dynamics (CFD) methods, such as the volume-o
 and level-set methods, have been widely used to simulate CIDJ.
 Droplet jumping has been investigated in terms of the effects of fluid and interfacial properties,
 including viscosity, droplet size, and surface tension.
-These effects are commonly characterized by the dimensionless
-Ohnesorge number, $Oh$.
-In continuum descriptions, droplets are generally treated as homogeneous fluids,
-making it difficult to explicitly account for microscopic heterogeneity
-in their physicochemical properties.
-Consequently, continuum-based methods are not well suited to capture
-how microscopic heterogeneity and interparticle interactions, such as those arising
-from differences in composition and miscibility between coalescing
-droplets, affect the coalescence dynamics.
+These effects are commonly characterized by the dimensionless Ohnesorge number, $Oh$.
+In continuum descriptions, representing asymmetry between coalescing droplets
+requires macroscopic properties, such as density, viscosity, and interfacial tension,
+that appropriately reflect the underlying chemical differences between them.
+However, establishing such a correspondence is not always straightforward.
+Consequently, continuum-based methods are not well suited to
+systematically explore how such chemical asymmetry between coalescing
+droplets affects the CIDJ.
 
 To address this issue, we employ many-body dissipative particle dynamics (MDPD),
 a mesoscopic particle-based simulation technique
